@@ -1,10 +1,10 @@
 '''
 Description: Editor's info in the top of the file
-Author: p1ay8y3ar
+Author: cvescan
 Date: 2021-04-01 23:53:55
-LastEditor: p1ay8y3ar
+LastEditor: cvescan
 LastEditTime: 2021-04-15 00:13:48
-Email: p1ay8y3ar@gmail.com
+Email: cvescan@gmail.com
 '''
 
 import requests
@@ -13,6 +13,7 @@ from datetime import datetime
 import time
 import random
 import math
+
 db = SqliteDatabase("cve.sqlite")
 
 
@@ -162,7 +163,7 @@ def main():
         newline = line + newline
     print(newline)
     if newline != "":
-        newline = "# Automatic monitor github cve using Github Actions \n\n > update time: {}  total: {} \n\n \n ![star me](https://img.shields.io/badge/star%20me-click%20--%3E-orange) [cve monitor](https://github.com/p1ay8y3ar/cve_monitor)  [Browsing through the web](https://p1ay8y3ar.github.io/cve_monitor/)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=cve_monitor) \n\n".format(
+        newline = "# Automatic monitor github cve using Github Actions \n\n > update time: {}  total: {} \n\n \n ![star me](https://img.shields.io/badge/star%20me-click%20--%3E-orange) [cve monitor](https://github.com/cvescan/cvescan)  [Browsing through the web](https://cvescan.github.io/cvescan/)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=cvescan) \n\n".format(
             datetime.now(),
             CVE_DB.select().where(CVE_DB.id != None).count()) + newline
 

@@ -38,8 +38,8 @@ jobs:
 
       - name: commit
         run: |
-          git config --global user.email p1ay8y3ar@gmail.com
-          git config --global user.name p1ay8y3ar
+          git config --global user.email cvescan@gmail.com
+          git config --global user.name cvescan
           git add .
           git commit -m "update db" -a
 

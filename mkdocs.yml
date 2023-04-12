@@ -1,6 +1,6 @@
-site_author: "p1ay8y3ar"
-repo_name: "p1ay8y3ar/cve_monitor"
-repo_url: "https://github.com/p1ay8y3ar/cve_monitor"
+site_author: "cvescan"
+repo_name: "cvescan/cvescan"
+repo_url: "https://github.com/cvescan/cvescan"
 docs_dir: web/
 site_name: CVE Monitor
 theme:
@@ -33,6 +33,6 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.tilde
 
-copyright: "https://github.com/p1ay8y3ar"
-google_analytics: ['G-T1CS54L5LC', 'p1ay8y3ar.github.io/cve_monitor/']
+copyright: "https://github.com/cvescan"
+google_analytics: ['G-T1CS54L5LC', 'cvescan.github.io/cvescan/']
 plugins: []
