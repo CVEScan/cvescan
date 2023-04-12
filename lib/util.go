@@ -3,7 +3,7 @@ package lib
 import (
 	"strings"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 // Rating converts a CVSS score to a string

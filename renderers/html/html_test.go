@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/afero"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 func Test_writeTemplate(t *testing.T) {

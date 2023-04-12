@@ -4,10 +4,10 @@ package renderers
 import (
 	"fmt"
 
-	"github.com/devops-kung-fu/bomber/models"
-	"github.com/devops-kung-fu/bomber/renderers/html"
-	"github.com/devops-kung-fu/bomber/renderers/json"
-	"github.com/devops-kung-fu/bomber/renderers/stdout"
+	"github.com/cvescan/cvescan/models"
+	"github.com/cvescan/cvescan/renderers/html"
+	"github.com/cvescan/cvescan/renderers/json"
+	"github.com/cvescan/cvescan/renderers/stdout"
 )
 
 // NewRenderer will return a Renderer interface for the requested output

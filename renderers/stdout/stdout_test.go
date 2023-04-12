@@ -6,7 +6,7 @@ import (
 	"github.com/devops-kung-fu/common/util"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 func TestRenderer_Render(t *testing.T) {

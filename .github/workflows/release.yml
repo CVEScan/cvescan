@@ -28,7 +28,7 @@ jobs:
         name: Generate SBOM
         uses: anchore/sbom-action@v0
         with:
-          artifact-name: bomber.cyclonedx.json
+          artifact-name: cvescan.cyclonedx.json
           path: .
           format: cyclonedx-json
       - 

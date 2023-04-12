@@ -5,10 +5,10 @@ import (
 
 	"github.com/kirinlabs/HttpRequest"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
-const userAgent = "Bomber"
+const userAgent = "cvescan"
 
 func newClient(c *models.Credentials) *HttpRequest.Request {
 	return HttpRequest.NewRequest().SetHeaders(map[string]string{

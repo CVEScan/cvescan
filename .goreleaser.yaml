@@ -1,8 +1,8 @@
-project_name: bomber
+project_name: cvescan
 
 builds:
   - 
-    binary: bomber
+    binary: cvescan
     goos:
       - darwin
       - linux
@@ -19,8 +19,8 @@ universal_binaries:
 
 brews:
   -
-    name: bomber
-    homepage: "https://github.com/devops-kung-fu/bomber"
+    name: cvescan
+    homepage: "https://github.com/cvescan/cvescan"
     tap:
       owner: devops-kung-fu
       name: homebrew-tap
@@ -35,7 +35,7 @@ nfpms:
   - 
     maintainer: DevOps Kung Fu Mafia <admin@dkfm.io>
     description: Scans SBoMs for security vulnerabilities.
-    homepage: https://github.com/devops-kung-fu/bomber
+    homepage: https://github.com/cvescan/cvescan
     license: MPL
     formats:
       - deb

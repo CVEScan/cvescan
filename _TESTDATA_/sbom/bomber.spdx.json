@@ -37,7 +37,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v0.7.0"
   },
   {
@@ -86,7 +86,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v1.19.0"
   },
   {
@@ -140,44 +140,44 @@
   },
   {
    "SPDXID": "SPDXRef-4a14f3963ec4f23b",
-   "name": "github.com/devops-kung-fu/bomber",
+   "name": "github.com/cvescan/cvescan",
    "licenseConcluded": "NONE",
    "downloadLocation": "NOASSERTION",
    "externalRefs": [
     {
      "referenceCategory": "SECURITY",
-     "referenceLocator": "cpe:2.3:a:devops-kung-fu:bomber:v0.0.0-20220928224516-b8b2d4abd421:*:*:*:*:*:*:*",
+     "referenceLocator": "cpe:2.3:a:devops-kung-fu:cvescan:v0.0.0-20220928224516-b8b2d4abd421:*:*:*:*:*:*:*",
      "referenceType": "cpe23Type"
     },
     {
      "referenceCategory": "SECURITY",
-     "referenceLocator": "cpe:2.3:a:devops_kung_fu:bomber:v0.0.0-20220928224516-b8b2d4abd421:*:*:*:*:*:*:*",
+     "referenceLocator": "cpe:2.3:a:devops_kung_fu:cvescan:v0.0.0-20220928224516-b8b2d4abd421:*:*:*:*:*:*:*",
      "referenceType": "cpe23Type"
     },
     {
      "referenceCategory": "SECURITY",
-     "referenceLocator": "cpe:2.3:a:devops-kung:bomber:v0.0.0-20220928224516-b8b2d4abd421:*:*:*:*:*:*:*",
+     "referenceLocator": "cpe:2.3:a:devops-kung:cvescan:v0.0.0-20220928224516-b8b2d4abd421:*:*:*:*:*:*:*",
      "referenceType": "cpe23Type"
     },
     {
      "referenceCategory": "SECURITY",
-     "referenceLocator": "cpe:2.3:a:devops_kung:bomber:v0.0.0-20220928224516-b8b2d4abd421:*:*:*:*:*:*:*",
+     "referenceLocator": "cpe:2.3:a:devops_kung:cvescan:v0.0.0-20220928224516-b8b2d4abd421:*:*:*:*:*:*:*",
      "referenceType": "cpe23Type"
     },
     {
      "referenceCategory": "SECURITY",
-     "referenceLocator": "cpe:2.3:a:devops:bomber:v0.0.0-20220928224516-b8b2d4abd421:*:*:*:*:*:*:*",
+     "referenceLocator": "cpe:2.3:a:devops:cvescan:v0.0.0-20220928224516-b8b2d4abd421:*:*:*:*:*:*:*",
      "referenceType": "cpe23Type"
     },
     {
      "referenceCategory": "PACKAGE_MANAGER",
-     "referenceLocator": "pkg:golang/github.com/devops-kung-fu/bomber@v0.0.0-20220928224516-b8b2d4abd421",
+     "referenceLocator": "pkg:golang/github.com/cvescan/cvescan@v0.0.0-20220928224516-b8b2d4abd421",
      "referenceType": "purl"
     }
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v0.0.0-20220928224516-b8b2d4abd421"
   },
   {
@@ -219,7 +219,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v0.2.5"
   },
   {
@@ -283,7 +283,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v1.13.0"
   },
   {
@@ -327,7 +327,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v1.5.2"
   },
   {
@@ -420,7 +420,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v6.3.9"
   },
   {
@@ -469,7 +469,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v1.1.1"
   },
   {
@@ -540,7 +540,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v0.1.13"
   },
   {
@@ -594,7 +594,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v0.0.16"
   },
   {
@@ -648,7 +648,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v0.0.14"
   },
   {
@@ -744,7 +744,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v0.1.0"
   },
   {
@@ -840,7 +840,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v0.4.2"
   },
   {
@@ -884,7 +884,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v1.9.2"
   },
   {
@@ -928,7 +928,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v1.5.0"
   },
   {
@@ -972,7 +972,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v1.0.5"
   },
   {
@@ -1038,7 +1038,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v0.0.0-20220910002029-abceb7e1c41e"
   },
   {
@@ -1082,7 +1082,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v0.0.0-20220928140112-f11e5e49a4ec"
   },
   {
@@ -1126,7 +1126,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v0.3.7"
   },
   {
@@ -1199,7 +1199,7 @@
    ],
    "filesAnalyzed": false,
    "licenseDeclared": "NONE",
-   "sourceInfo": "acquired package info from go module information: bomber",
+   "sourceInfo": "acquired package info from go module information: cvescan",
    "versionInfo": "v0.0.0-20220922133306-665eaaec4324"
   },
   {

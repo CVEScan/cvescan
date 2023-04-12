@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/devops-kung-fu/bomber/providers/ossindex"
-	"github.com/devops-kung-fu/bomber/providers/osv"
-	"github.com/devops-kung-fu/bomber/providers/snyk"
+	"github.com/cvescan/cvescan/providers/ossindex"
+	"github.com/cvescan/cvescan/providers/osv"
+	"github.com/cvescan/cvescan/providers/snyk"
 )
 
 func TestNewProvider(t *testing.T) {

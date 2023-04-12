@@ -17,10 +17,10 @@ import (
 	"github.com/devops-kung-fu/common/slices"
 	"github.com/spf13/afero"
 
-	cyclonedx "github.com/devops-kung-fu/bomber/formats/cyclonedx"
-	spdx "github.com/devops-kung-fu/bomber/formats/spdx"
-	syft "github.com/devops-kung-fu/bomber/formats/syft"
-	"github.com/devops-kung-fu/bomber/models"
+	cyclonedx "github.com/cvescan/cvescan/formats/cyclonedx"
+	spdx "github.com/cvescan/cvescan/formats/spdx"
+	syft "github.com/cvescan/cvescan/formats/syft"
+	"github.com/cvescan/cvescan/models"
 )
 
 // Load retrieves a slice of Purls from various types of SBOMs
@@ -113,7 +113,7 @@ func loadFilePurls(afs *afero.Afero, arg string) (scanned []models.ScannedFile, 
 		}
 	}
 	log.Printf("WARNING: %v isn't a valid SBOM", arg)
-	return scanned, nil, nil, fmt.Errorf("%v is not a SBOM recognized by bomber", arg)
+	return scanned, nil, nil, fmt.Errorf("%v is not a SBOM recognized by cvescan", arg)
 }
 
 // LoadIgnore loads a list of CVEs entered one on each line from the filename provided

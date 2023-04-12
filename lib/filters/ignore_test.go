@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 func TestIgnore(t *testing.T) {

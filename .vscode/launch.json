@@ -109,7 +109,7 @@
             "request": "launch",
             "mode": "auto",
             "program": "${workspaceFolder}/main.go",
-            "args": ["--provider=osv", "--debug=true", "--output=json", "--ignore-file=./_TESTDATA_/ignore/bomber.ignore", "scan", "./_TESTDATA_/sbom/railsgoat.cyclonedx.json"]
+            "args": ["--provider=osv", "--debug=true", "--output=json", "--ignore-file=./_TESTDATA_/ignore/cvescan.ignore", "scan", "./_TESTDATA_/sbom/railsgoat.cyclonedx.json"]
         },
         
     ]

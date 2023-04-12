@@ -9,7 +9,7 @@ import (
 
 	"github.com/kirinlabs/HttpRequest"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 const osvURL = "https://api.osv.dev/v1/query"

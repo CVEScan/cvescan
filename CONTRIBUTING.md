@@ -1,4 +1,4 @@
-# Contributing to bomber
+# Contributing to cvescan
 
 ## We Develop with Github
 
@@ -27,7 +27,7 @@ Any contributions you make will be under the MIT Software License. When you subm
 
 ### Overview
 
-In order to use contribute and participate in the development of ```bomber``` you'll need to have an updated Go environment. Before you start, please view the [Contributing](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) files in this repository.
+In order to use contribute and participate in the development of ```cvescan``` you'll need to have an updated Go environment. Before you start, please view the [Contributing](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) files in this repository.
 
 ### Prerequisites
 
@@ -51,7 +51,7 @@ This will configure the ```pre-commit``` hooks to check code quality, tests, upd
 
 ### Debugging
 
-The project is set up to work really well with [Visual Studio Code](https://code.visualstudio.com). Once you open the ```bomber``` folder in Visual Studio Code, go ahead and use the debugger to run any one of the pre-set configurations. They are all hooked into the test SBOM's that come with the source code.
+The project is set up to work really well with [Visual Studio Code](https://code.visualstudio.com). Once you open the ```cvescan``` folder in Visual Studio Code, go ahead and use the debugger to run any one of the pre-set configurations. They are all hooked into the test SBOM's that come with the source code.
 
 ### Building
 
@@ -64,8 +64,8 @@ Use the [Makefile](Makefile) to build, test, or do pre-commit checks.
 The testing framework is set up to use environment variables that are found in a file called ```test.env``` in the **root directory** of the project. This file has been added to the ```.gitignore``` file in this project so it will be ignored if it exists in your file structure when committing the code. If you are running tests, this file should exist and have the following values configured:
 
 ``` bash
-BOMBER_PROVIDER_USERNAME={{your OSS Index user name}}
-BOMBER_PROVIDER_TOKEN={{your OSS Index API Token}}
+cvescan_PROVIDER_USERNAME={{your OSS Index user name}}
+cvescan_PROVIDER_TOKEN={{your OSS Index API Token}}
 ```
 To load this file, you use the following command in your terminal before opening an editor such as Visual Studio Code (from your terminal).
 

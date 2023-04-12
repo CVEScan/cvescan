@@ -9,7 +9,7 @@ import (
 
 	"github.com/kirinlabs/HttpRequest"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 const epssBaseURL = "https://api.first.org/data/v1/epss?cve="

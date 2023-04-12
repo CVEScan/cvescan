@@ -9,7 +9,7 @@ help: ## This help
 .DEFAULT_GOAL := help
 
 title:
-	@echo "bomber Makefile"
+	@echo "cvescan Makefile"
 	@echo "---------------"
 
 build: ## Builds the application

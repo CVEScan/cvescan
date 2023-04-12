@@ -18,13 +18,13 @@ import (
 var (
 	version = "0.4.2"
 	output  string
-	//Afs stores a global OS Filesystem that is used throughout bomber
+	//Afs stores a global OS Filesystem that is used throughout cvescan
 	Afs = &afero.Afero{Fs: afero.NewOsFs()}
 	//Verbose determines if the execution of hing should output verbose information
 	debug   bool
 	rootCmd = &cobra.Command{
-		Use:     "bomber [flags] file",
-		Example: "  bomber test.spdx",
+		Use:     "cvescan [flags] file",
+		Example: "  cvescan test.spdx",
 		Short:   "Scans SBoMs for security vulnerabilities.",
 		Version: version,
 		PersistentPreRun: func(cmd *cobra.Command, args []string) {
@@ -38,13 +38,13 @@ var (
 				color.Style{color.FgWhite, color.OpBold}.Println(" █▄█ ▀▄▀ █ ▀ █ █▄█ █▄▄ █▀▄")
 				fmt.Println()
 				fmt.Println("DKFM - DevOps Kung Fu Mafia")
-				fmt.Println("https://github.com/devops-kung-fu/bomber")
+				fmt.Println("https://github.com/cvescan/cvescan")
 				fmt.Printf("Version: %s\n", version)
 				fmt.Println()
 
-				latestVersion, _ := github.LatestReleaseTag("devops-kung-fu", "bomber")
+				latestVersion, _ := github.LatestReleaseTag("devops-kung-fu", "cvescan")
 				if !strings.Contains(latestVersion, version) {
-					color.Yellow.Printf("A newer version of bomber is available (%s)\n\n", latestVersion)
+					color.Yellow.Printf("A newer version of cvescan is available (%s)\n\n", latestVersion)
 				}
 			})
 		},
@@ -61,5 +61,5 @@ func Execute() {
 
 func init() {
 	rootCmd.PersistentFlags().BoolVar(&debug, "debug", false, "Displays debug level log messages.")
-	rootCmd.PersistentFlags().StringVar(&output, "output", "stdout", "How bomber should output findings (json, xml, stdout)")
+	rootCmd.PersistentFlags().StringVar(&output, "output", "stdout", "How cvescan should output findings (json, xml, stdout)")
 }

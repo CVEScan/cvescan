@@ -4,10 +4,10 @@ package providers
 import (
 	"fmt"
 
-	"github.com/devops-kung-fu/bomber/models"
-	"github.com/devops-kung-fu/bomber/providers/ossindex"
-	"github.com/devops-kung-fu/bomber/providers/osv"
-	"github.com/devops-kung-fu/bomber/providers/snyk"
+	"github.com/cvescan/cvescan/models"
+	"github.com/cvescan/cvescan/providers/ossindex"
+	"github.com/cvescan/cvescan/providers/osv"
+	"github.com/cvescan/cvescan/providers/snyk"
 )
 
 // NewProvider will return a provider interface for the requested vulnerability services

@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 	"github.com/jarcoal/httpmock"
 	"github.com/stretchr/testify/assert"
 )

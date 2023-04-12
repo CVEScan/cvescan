@@ -8,7 +8,7 @@ import (
 	"github.com/jarcoal/httpmock"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 //go:embed testdata/snyk_package_issues_response.json
@@ -25,10 +25,10 @@ func TestInfo(t *testing.T) {
 
 func Test_validateCredentials(t *testing.T) {
 	// Back up any env tokens
-	bomberToken := os.Getenv("BOMBER_PROVIDER_TOKEN")
+	cvescanToken := os.Getenv("cvescan_PROVIDER_TOKEN")
 	snykToken := os.Getenv("SNYK_TOKEN")
 
-	os.Unsetenv("BOMBER_PROVIDER_TOKEN")
+	os.Unsetenv("cvescan_PROVIDER_TOKEN")
 	os.Unsetenv("SNYK_TOKEN")
 
 	credentials := models.Credentials{
@@ -45,11 +45,11 @@ func Test_validateCredentials(t *testing.T) {
 	err = validateCredentials(&credentials)
 	assert.Error(t, err)
 
-	os.Setenv("BOMBER_PROVIDER_TOKEN", "bomber-token")
+	os.Setenv("cvescan_PROVIDER_TOKEN", "cvescan-token")
 
 	err = validateCredentials(&credentials)
 	assert.NoError(t, err)
-	assert.Equal(t, "bomber-token", credentials.Token)
+	assert.Equal(t, "cvescan-token", credentials.Token)
 
 	os.Setenv("SNYK_TOKEN", "snyk-token")
 
@@ -59,7 +59,7 @@ func Test_validateCredentials(t *testing.T) {
 	assert.Equal(t, "snyk-token", credentials.Token)
 
 	//reset env
-	os.Setenv("BOMBER_PROVIDER_TOKEN", bomberToken)
+	os.Setenv("cvescan_PROVIDER_TOKEN", cvescanToken)
 	os.Setenv("SNYK_TOKEN", snykToken)
 }
 

@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 // Renderer contains methods to render to JSON format

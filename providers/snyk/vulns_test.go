@@ -7,7 +7,7 @@ import (
 	"github.com/jarcoal/httpmock"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 const orgID string = "33e75b5e-3ebe-4d2e-8eba-17a24d20fc72"
@@ -79,10 +79,10 @@ func TestGetVulnsForPurlInvalidPurl(t *testing.T) {
 	assert.Nil(t, vulns)
 }
 
-func TestSnykIssueToBomberVuln(t *testing.T) {
+func TestSnykIssueTocvescanVuln(t *testing.T) {
 	issue, err := snykIssueMock()
 	assert.NoError(t, err)
-	vuln := snykIssueToBomberVuln(issue)
+	vuln := snykIssueTocvescanVuln(issue)
 	expected := models.Vulnerability{
 		ID:          "SNYK-RUBY-TZINFO-2958048",
 		Title:       "Directory Traversal",
@@ -103,27 +103,27 @@ func TestSnykIssueToBomberVuln(t *testing.T) {
 	assert.Equal(t, expected, vuln)
 }
 
-func TestSnykIssueToBomberVulnModerate(t *testing.T) {
+func TestSnykIssueTocvescanVulnModerate(t *testing.T) {
 	issue, err := snykIssueMock()
 	assert.NoError(t, err)
 	issue.Attributes.EffectiveSeverityLevel = "medium"
 
-	vuln := snykIssueToBomberVuln(issue)
+	vuln := snykIssueTocvescanVuln(issue)
 
 	assert.Equal(t, "MODERATE", vuln.Severity)
 }
 
-func TestSnykIssueToBomberVulnMissingCwe(t *testing.T) {
+func TestSnykIssueTocvescanVulnMissingCwe(t *testing.T) {
 	issue, err := snykIssueMock()
 	assert.NoError(t, err)
 	issue.Attributes.Problems = []Problem{}
 
-	vuln := snykIssueToBomberVuln(issue)
+	vuln := snykIssueTocvescanVuln(issue)
 
 	assert.Equal(t, "", vuln.Cwe)
 }
 
-func TestSnykIssueToBomberVulnSnykSeverity(t *testing.T) {
+func TestSnykIssueTocvescanVulnSnykSeverity(t *testing.T) {
 	tc := []struct {
 		Title             string
 		Severities        []Severity
@@ -165,20 +165,20 @@ func TestSnykIssueToBomberVulnSnykSeverity(t *testing.T) {
 	for _, tt := range tc {
 		t.Run(tt.Title, func(t *testing.T) {
 			issue.Attributes.Severities = tt.Severities
-			vuln := snykIssueToBomberVuln(issue)
+			vuln := snykIssueTocvescanVuln(issue)
 			assert.Equal(t, tt.ExpectedCvssScore, vuln.CvssScore)
 		})
 	}
 }
 
-func TestSnykIssueToBomberVulnOtherSeverity(t *testing.T) {
+func TestSnykIssueTocvescanVulnOtherSeverity(t *testing.T) {
 	issue, err := snykIssueMock()
 	assert.NoError(t, err)
 	issue.Attributes.Severities = []Severity{
 		{Source: "SUSE", Score: 7},
 	}
 
-	vuln := snykIssueToBomberVuln(issue)
+	vuln := snykIssueTocvescanVuln(issue)
 
 	assert.Equal(t, float64(7), vuln.CvssScore)
 }

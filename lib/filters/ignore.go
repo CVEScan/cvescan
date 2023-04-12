@@ -2,7 +2,7 @@
 package filters
 
 import (
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 // Ignore goes through a list of vulnerabilities and ignores those that have a CVE listed in an ignore file

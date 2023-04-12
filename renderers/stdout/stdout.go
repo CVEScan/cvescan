@@ -14,7 +14,7 @@ import (
 	"github.com/jedib0t/go-pretty/v6/table"
 	"github.com/package-url/packageurl-go"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 // Renderer contains methods to render a pretty tabular summary to STDOUT
@@ -84,7 +84,7 @@ func (Renderer) Render(results models.Results) (err error) {
 		fmt.Println("NOTES:")
 		fmt.Println()
 		fmt.Println("1. The list of vulnerabilities displayed may differ from provider to provider. This list")
-		fmt.Println("   may not contain all possible vulnerabilities. Please try the other providers that bomber")
+		fmt.Println("   may not contain all possible vulnerabilities. Please try the other providers that cvescan")
 		fmt.Println("   supports (osv, ossindex, snyk)")
 		fmt.Println("2. EPSS Percentage indicates the % chance that the vulnerability will be exploited. This")
 		fmt.Println("   value will assist in prioritizing remediation. For more information on EPSS, refer to")
@@ -92,8 +92,8 @@ func (Renderer) Render(results models.Results) (err error) {
 	} else {
 		color.Green.Printf("No vulnerabilities found using the %v provider\n", results.Meta.Provider)
 		fmt.Println()
-		fmt.Printf("NOTE: Just because bomber didn't find any vulnerabilities using the %v provider does\n", results.Meta.Provider)
-		fmt.Println("not mean that there are no vulnerabilities. Please try the other providers that bomber")
+		fmt.Printf("NOTE: Just because cvescan didn't find any vulnerabilities using the %v provider does\n", results.Meta.Provider)
+		fmt.Println("not mean that there are no vulnerabilities. Please try the other providers that cvescan")
 		fmt.Println("supports (osv, ossindex)")
 	}
 	return

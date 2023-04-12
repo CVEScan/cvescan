@@ -16,7 +16,7 @@ import (
 	"github.com/microcosm-cc/bluemonday"
 	"github.com/spf13/afero"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 // Renderer contains methods to render results to an HTMLfile
@@ -34,7 +34,7 @@ func (Renderer) Render(results models.Results) (err error) {
 	t := time.Now()
 	r := strings.NewReplacer("-", "", " ", "-", ":", "-")
 	filename := t.Format("2006-01-02 15:04:05")
-	filename, _ = filepath.Abs(fmt.Sprintf("./%s-bomber-results.html", r.Replace(filename)))
+	filename, _ = filepath.Abs(fmt.Sprintf("./%s-cvescan-results.html", r.Replace(filename)))
 
 	util.PrintInfo("Writing filename:", filename)
 	err = writeTemplate(afs, filename, results)
@@ -103,7 +103,7 @@ func genTemplate(output string) (t *template.Template) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bomber Results</title>
+    <title>cvescan Results</title>
 
 	<style>
 	body {
@@ -117,7 +117,7 @@ func genTemplate(output string) (t *template.Template) {
 		padding: 10px;
 		margin-bottom: 10px;
 	}
-	#bomber-logo {
+	#cvescan-logo {
 		margin-top: 10px;
 		margin-bottom: 30px;
 		width:331px;
@@ -158,11 +158,11 @@ func genTemplate(output string) (t *template.Template) {
 	</style>
 </head>
 <body>
-	<div id="bomber-logo"></div>
+	<div id="cvescan-logo"></div>
 	<p>The following results were detected by <code>{{.Meta.Generator}} {{.Meta.Version}}</code> on {{.Meta.Date}} using the {{.Meta.Provider}} provider.</p>
 	{{ if ne (len .Packages) 0 }} 
 	<p>
-		Vulnerabilities displayed may differ from provider to provider. This list may not contain all possible vulnerabilities. Please try the other providers that <code>bomber</code> supports (osv, ossindex, snyk). There is no guarantee that 
+		Vulnerabilities displayed may differ from provider to provider. This list may not contain all possible vulnerabilities. Please try the other providers that <code>cvescan</code> supports (osv, ossindex, snyk). There is no guarantee that 
 		the next time you scan for vulnerabilities that there won't be more, or less of them. Threats are continuous.
 	</p>
 	<p>
@@ -183,7 +183,7 @@ func genTemplate(output string) (t *template.Template) {
 	{{end}}
 	{{ if ne (len .Licenses) 0 }} 
 		<h1>Licenses</h1>
-		<p>The following licenses were found by <code>bomber</code>:</p>
+		<p>The following licenses were found by <code>cvescan</code>:</p>
 		<ul>
 		{{ range $license := .Licenses }}
 			<li>{{ $license }}</li>

@@ -14,12 +14,12 @@ import (
 	"github.com/spf13/cobra"
 	"k8s.io/utils/strings/slices"
 
-	"github.com/devops-kung-fu/bomber/lib"
-	"github.com/devops-kung-fu/bomber/lib/enrichment"
-	"github.com/devops-kung-fu/bomber/lib/filters"
-	"github.com/devops-kung-fu/bomber/models"
-	"github.com/devops-kung-fu/bomber/providers"
-	"github.com/devops-kung-fu/bomber/renderers"
+	"github.com/cvescan/cvescan/lib"
+	"github.com/cvescan/cvescan/lib/enrichment"
+	"github.com/cvescan/cvescan/lib/filters"
+	"github.com/cvescan/cvescan/models"
+	"github.com/cvescan/cvescan/providers"
+	"github.com/cvescan/cvescan/renderers"
 )
 
 var (

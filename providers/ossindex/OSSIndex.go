@@ -10,8 +10,8 @@ import (
 
 	"github.com/kirinlabs/HttpRequest"
 
-	"github.com/devops-kung-fu/bomber/lib"
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/lib"
+	"github.com/cvescan/cvescan/models"
 )
 
 const ossindexURL = "https://ossindex.sonatype.org/api/v3/authorized/component-report"
@@ -83,14 +83,14 @@ func validateCredentials(credentials *models.Credentials) (err error) {
 		return errors.New("credentials cannot be nil")
 	}
 	if credentials.Username == "" {
-		credentials.Username = os.Getenv("BOMBER_PROVIDER_USERNAME")
+		credentials.Username = os.Getenv("cvescan_PROVIDER_USERNAME")
 	}
 	if credentials.Token == "" {
-		credentials.Token = os.Getenv("BOMBER_PROVIDER_TOKEN")
+		credentials.Token = os.Getenv("cvescan_PROVIDER_TOKEN")
 	}
 
 	if credentials.Username == "" && credentials.Token == "" {
-		err = errors.New("bomber requires a username and token to use the OSS Index provider")
+		err = errors.New("cvescan requires a username and token to use the OSS Index provider")
 	}
 	return
 }

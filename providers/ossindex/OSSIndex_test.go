@@ -7,7 +7,7 @@ import (
 	"github.com/jarcoal/httpmock"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 func TestInfo(t *testing.T) {
@@ -22,11 +22,11 @@ func Test_validateCredentials(t *testing.T) {
 	err := validateCredentials(nil)
 	assert.Error(t, err)
 
-	username := os.Getenv("BOMBER_PROVIDER_USERNAME")
-	token := os.Getenv("BOMBER_PROVIDER_TOKEN")
+	username := os.Getenv("cvescan_PROVIDER_USERNAME")
+	token := os.Getenv("cvescan_PROVIDER_TOKEN")
 
-	os.Unsetenv("BOMBER_PROVIDER_USERNAME")
-	os.Unsetenv("BOMBER_PROVIDER_TOKEN")
+	os.Unsetenv("cvescan_PROVIDER_USERNAME")
+	os.Unsetenv("cvescan_PROVIDER_TOKEN")
 	credentials := models.Credentials{
 		Username: "test",
 		Token:    "token",
@@ -40,8 +40,8 @@ func Test_validateCredentials(t *testing.T) {
 	err = validateCredentials(&credentials)
 	assert.Error(t, err)
 
-	os.Setenv("BOMBER_PROVIDER_USERNAME", "test-env")
-	os.Setenv("BOMBER_PROVIDER_TOKEN", "token-env")
+	os.Setenv("cvescan_PROVIDER_USERNAME", "test-env")
+	os.Setenv("cvescan_PROVIDER_TOKEN", "token-env")
 
 	err = validateCredentials(&credentials)
 	assert.NoError(t, err)
@@ -49,8 +49,8 @@ func Test_validateCredentials(t *testing.T) {
 	assert.Equal(t, "token-env", credentials.Token)
 
 	//reset env
-	os.Setenv("BOMBER_PROVIDER_USERNAME", username)
-	os.Setenv("BOMBER_PROVIDER_TOKEN", token)
+	os.Setenv("cvescan_PROVIDER_USERNAME", username)
+	os.Setenv("cvescan_PROVIDER_TOKEN", token)
 }
 
 func TestProvider_Scan_FakeCredentials(t *testing.T) {

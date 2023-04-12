@@ -7,9 +7,9 @@ import (
 	"github.com/spf13/afero"
 	"github.com/stretchr/testify/assert"
 
-	cyclonedx "github.com/devops-kung-fu/bomber/formats/cyclonedx"
-	spdx "github.com/devops-kung-fu/bomber/formats/spdx"
-	syft "github.com/devops-kung-fu/bomber/formats/syft"
+	cyclonedx "github.com/cvescan/cvescan/formats/cyclonedx"
+	spdx "github.com/cvescan/cvescan/formats/spdx"
+	syft "github.com/cvescan/cvescan/formats/syft"
 )
 
 func TestLoad_cyclonedx(t *testing.T) {
@@ -112,7 +112,7 @@ func TestLoad_BadJSON_SPDX(t *testing.T) {
 
 	_, _, _, err = loadFilePurls(afs, "/test-spdx.json")
 	assert.Error(t, err)
-	assert.Equal(t, "/test-spdx.json is not a SBOM recognized by bomber", err.Error())
+	assert.Equal(t, "/test-spdx.json is not a SBOM recognized by cvescan", err.Error())
 }
 
 func TestLoad_garbage(t *testing.T) {
@@ -123,7 +123,7 @@ func TestLoad_garbage(t *testing.T) {
 
 	_, _, _, err = loadFilePurls(afs, "/not-a-sbom.json")
 	assert.Error(t, err)
-	assert.Equal(t, "/not-a-sbom.json is not a SBOM recognized by bomber", err.Error())
+	assert.Equal(t, "/not-a-sbom.json is not a SBOM recognized by cvescan", err.Error())
 }
 
 func Test_loadFilePurls(t *testing.T) {

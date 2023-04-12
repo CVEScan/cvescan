@@ -9,7 +9,7 @@ import (
 
 	"github.com/remeh/sizedwaitgroup"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 const (
@@ -74,11 +74,11 @@ func validateCredentials(credentials *models.Credentials) error {
 	}
 
 	if credentials.Token == "" {
-		credentials.Token = os.Getenv("BOMBER_PROVIDER_TOKEN")
+		credentials.Token = os.Getenv("cvescan_PROVIDER_TOKEN")
 	}
 
 	if credentials.Token == "" {
-		return errors.New("bomber requires a token to use the Snyk provider")
+		return errors.New("cvescan requires a token to use the Snyk provider")
 	}
 
 	return nil

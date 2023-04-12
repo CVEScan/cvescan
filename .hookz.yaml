@@ -44,7 +44,7 @@
         - name: "syft: Generate a Software Bill of Materials (SBoM)"
           script: "
             #!/bin/bash \n
-            syft . -o cyclonedx-json=sbom/bomber.cyclonedx.json &> /dev/null \n
+            syft . -o cyclonedx-json=sbom/cvescan.cyclonedx.json &> /dev/null \n
             "
         - name: "git: Add all changed files during the pre-commit stage"
           exec: git

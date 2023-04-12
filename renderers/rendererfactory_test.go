@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/devops-kung-fu/bomber/renderers/html"
-	"github.com/devops-kung-fu/bomber/renderers/json"
-	"github.com/devops-kung-fu/bomber/renderers/stdout"
+	"github.com/cvescan/cvescan/renderers/html"
+	"github.com/cvescan/cvescan/renderers/json"
+	"github.com/cvescan/cvescan/renderers/stdout"
 )
 
 func TestNewProvider(t *testing.T) {

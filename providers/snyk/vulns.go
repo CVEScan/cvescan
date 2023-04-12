@@ -10,7 +10,7 @@ import (
 	"github.com/kirinlabs/HttpRequest"
 	"github.com/package-url/packageurl-go"
 
-	"github.com/devops-kung-fu/bomber/models"
+	"github.com/cvescan/cvescan/models"
 )
 
 type SnykIssueResource struct {
@@ -175,7 +175,7 @@ func getVulnsForPurl(
 	}
 
 	for _, v := range response.Data {
-		vuln := snykIssueToBomberVuln(v)
+		vuln := snykIssueTocvescanVuln(v)
 		vulns = append(vulns, vuln)
 	}
 
@@ -189,7 +189,7 @@ func validatePurl(purl string) error {
 	return nil
 }
 
-func snykIssueToBomberVuln(v SnykIssueResource) models.Vulnerability {
+func snykIssueTocvescanVuln(v SnykIssueResource) models.Vulnerability {
 	cvss := getCvss(v)
 	severity := strings.ToUpper(string(v.Attributes.EffectiveSeverityLevel))
 

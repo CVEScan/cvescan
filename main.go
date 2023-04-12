@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/devops-kung-fu/bomber/cmd"
+	"github.com/cvescan/cvescan/cmd"
 )
 
 func main() {

@@ -37,7 +37,7 @@ type Metadata struct {
 	H1Digest          *string           `json:"h1Digest,omitempty"`
 }
 
-// Schema provides detail about what JSON schema the document conforms to. Used by bomber to determine if the SBOM is in Syft format.
+// Schema provides detail about what JSON schema the document conforms to. Used by cvescan to determine if the SBOM is in Syft format.
 type Schema struct {
 	Version string `json:"version"`
 	URL     string `json:"url"`
@@ -69,7 +69,7 @@ func TestBytes() []byte {
 				"type": "go-module",
 				"foundBy": "go-module-binary-cataloger",
 				"locations": [{
-					"path": "bomber"
+					"path": "cvescan"
 				}],
 				"licenses": [],
 				"language": "go",
@@ -83,7 +83,7 @@ func TestBytes() []byte {
 					"goCompiledVersion": "go1.19",
 					"architecture": "amd64",
 					"h1Digest": "h1:SizWGbZzFTC/O/1yh072XQBMxfvsoWqd//oKCIyzFyE=",
-					"mainModule": "github.com/devops-kung-fu/bomber"
+					"mainModule": "github.com/cvescan/cvescan"
 				}
 			}],
 			"schema": {

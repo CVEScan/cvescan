@@ -1,4 +1,4 @@
-module github.com/devops-kung-fu/bomber
+module github.com/cvescan/cvescan
 
 go 1.20
 

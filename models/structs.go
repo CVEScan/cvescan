@@ -1,4 +1,4 @@
-// Package models contains structs and interfaces used by bomber
+// Package models contains structs and interfaces used by cvescan
 package models
 
 import (
@@ -38,7 +38,7 @@ type Summary struct {
 	Critical    int
 }
 
-// Results is the high level JSON object used to define vulnerabilities processed by bomber.
+// Results is the high level JSON object used to define vulnerabilities processed by cvescan.
 type Results struct {
 	Meta     Meta          `json:"meta,omitempty"`
 	Files    []ScannedFile `json:"files,omitempty"`
@@ -47,7 +47,7 @@ type Results struct {
 	Packages []Package     `json:"packages,omitempty"`
 }
 
-// Meta contains system and execution information about the results from bomber
+// Meta contains system and execution information about the results from cvescan
 type Meta struct {
 	Generator string    `json:"generator"`
 	URL       string    `json:"url"`
@@ -68,12 +68,12 @@ type Credentials struct {
 	Token    string
 }
 
-// NewResults defines the high level output of bomber
+// NewResults defines the high level output of cvescan
 func NewResults(packages []Package, summary Summary, scanned []ScannedFile, licenses []string, version, providerName string) Results {
 	return Results{
 		Meta: Meta{
-			Generator: "bomber",
-			URL:       "https://github.com/devops-kung-fu/bomber",
+			Generator: "cvescan",
+			URL:       "https://github.com/cvescan/cvescan",
 			Version:   version,
 			Provider:  providerName,
 			Date:      time.Now(),
