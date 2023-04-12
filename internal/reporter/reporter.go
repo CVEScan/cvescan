@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 	"github.com/fatih/color"
-	"github.com/g-rath/osv-detector/pkg/database"
-	"github.com/g-rath/osv-detector/pkg/lockfile"
+	"github.com/cvescan/cvescan/pkg/database"
+	"github.com/cvescan/cvescan/pkg/lockfile"
 	"io"
 )
 

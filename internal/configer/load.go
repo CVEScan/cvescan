@@ -3,8 +3,8 @@ package configer
 import (
 	"errors"
 	"fmt"
-	"github.com/g-rath/osv-detector/internal/reporter"
-	"github.com/g-rath/osv-detector/pkg/database"
+	"github.com/cvescan/cvescan/internal/reporter"
+	"github.com/cvescan/cvescan/pkg/database"
 	"gopkg.in/yaml.v2"
 	"net/url"
 	"os"
@@ -96,12 +96,12 @@ func newConfig(r *reporter.Reporter, raw rawConfig) (Config, error) {
 	return config, nil
 }
 
-// Find attempts to locate & load a Config using the default name (".osv-detector")
+// Find attempts to locate & load a Config using the default name (".cvescan")
 func Find(r *reporter.Reporter, pathToDirectory string) (Config, error) {
 	var config Config
 	var err error
 
-	configName := ".osv-detector"
+	configName := ".cvescan"
 
 	config, err = Load(r, pathToDirectory+"/"+configName+".yml")
 

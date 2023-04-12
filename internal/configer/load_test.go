@@ -3,8 +3,8 @@ package configer_test
 import (
 	"bytes"
 	"fmt"
-	"github.com/g-rath/osv-detector/internal/configer"
-	"github.com/g-rath/osv-detector/internal/reporter"
+	"github.com/cvescan/cvescan/internal/configer"
+	"github.com/cvescan/cvescan/internal/reporter"
 	"path/filepath"
 	"reflect"
 	"strings"
@@ -48,7 +48,7 @@ func TestFind_ExtYml(t *testing.T) {
 	r, _, _ := newReporter(t)
 
 	expectedIgnores := []string{"GHSA-1", "GHSA-2", "GHSA-3"}
-	expectedFilePath := filepath.FromSlash("fixtures/ext-yml/.osv-detector.yml")
+	expectedFilePath := filepath.FromSlash("fixtures/ext-yml/.cvescan.yml")
 
 	config, err := configer.Find(r, filepath.FromSlash("fixtures/ext-yml"))
 
@@ -70,7 +70,7 @@ func TestFind_ExtYml_Invalid(t *testing.T) {
 
 	r, _, _ := newReporter(t)
 
-	expectedFilePath := filepath.FromSlash("fixtures/ext-yml-invalid/.osv-detector.yml")
+	expectedFilePath := filepath.FromSlash("fixtures/ext-yml-invalid/.cvescan.yml")
 
 	config, err := configer.Find(r, filepath.FromSlash("fixtures/ext-yml-invalid"))
 
@@ -93,7 +93,7 @@ func TestFind_ExtYaml(t *testing.T) {
 	r, _, _ := newReporter(t)
 
 	expectedIgnores := []string{"GHSA-4", "GHSA-5", "GHSA-6"}
-	expectedFilePath := filepath.FromSlash("fixtures/ext-yaml/.osv-detector.yaml")
+	expectedFilePath := filepath.FromSlash("fixtures/ext-yaml/.cvescan.yaml")
 
 	config, err := configer.Find(r, filepath.FromSlash("fixtures/ext-yaml"))
 
@@ -115,7 +115,7 @@ func TestFind_ExtYaml_Invalid(t *testing.T) {
 
 	r, _, _ := newReporter(t)
 
-	expectedFilePath := filepath.FromSlash("fixtures/ext-yaml-invalid/.osv-detector.yaml")
+	expectedFilePath := filepath.FromSlash("fixtures/ext-yaml-invalid/.cvescan.yaml")
 
 	config, err := configer.Find(r, filepath.FromSlash("fixtures/ext-yaml-invalid"))
 
@@ -137,7 +137,7 @@ func TestLoad(t *testing.T) {
 
 	r, _, stderr := newReporter(t)
 
-	fixturePath := filepath.FromSlash("fixtures/extra-databases/.osv-detector.yml")
+	fixturePath := filepath.FromSlash("fixtures/extra-databases/.cvescan.yml")
 
 	config, err := configer.Load(r, fixturePath)
 

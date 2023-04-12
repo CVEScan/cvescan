@@ -1,4 +1,4 @@
-module github.com/g-rath/osv-detector
+module github.com/cvescan/cvescan
 
 go 1.17
 

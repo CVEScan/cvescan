@@ -3,7 +3,7 @@ package semantic
 import (
 	"errors"
 	"fmt"
-	"github.com/g-rath/osv-detector/internal"
+	"github.com/cvescan/cvescan/internal"
 )
 
 var ErrUnsupportedEcosystem = errors.New("unsupported ecosystem")

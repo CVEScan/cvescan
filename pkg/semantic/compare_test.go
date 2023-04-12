@@ -2,8 +2,8 @@ package semantic_test
 
 import (
 	"bufio"
-	"github.com/g-rath/osv-detector/internal"
-	"github.com/g-rath/osv-detector/pkg/semantic"
+	"github.com/cvescan/cvescan/internal"
+	"github.com/cvescan/cvescan/pkg/semantic"
 	"os"
 	"strings"
 	"testing"

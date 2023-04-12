@@ -4,11 +4,11 @@ import (
 	"flag"
 	"fmt"
 	"github.com/fatih/color"
-	"github.com/g-rath/osv-detector/internal"
-	"github.com/g-rath/osv-detector/internal/configer"
-	"github.com/g-rath/osv-detector/internal/reporter"
-	"github.com/g-rath/osv-detector/pkg/database"
-	"github.com/g-rath/osv-detector/pkg/lockfile"
+	"github.com/cvescan/cvescan/internal"
+	"github.com/cvescan/cvescan/internal/configer"
+	"github.com/cvescan/cvescan/internal/reporter"
+	"github.com/cvescan/cvescan/pkg/database"
+	"github.com/cvescan/cvescan/pkg/lockfile"
 	"io"
 	"os"
 	"path/filepath"
@@ -511,7 +511,7 @@ This flag can be passed multiple times to ignore different vulnerabilities`)
 	}
 
 	if *printVersion {
-		r.PrintText(fmt.Sprintf("osv-detector %s (%s, commit %s)\n", version, date, commit))
+		r.PrintText(fmt.Sprintf("cvescan %s (%s, commit %s)\n", version, date, commit))
 
 		return 0
 	}

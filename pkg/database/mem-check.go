@@ -1,7 +1,7 @@
 package database
 
 import (
-	"github.com/g-rath/osv-detector/internal"
+	"github.com/cvescan/cvescan/internal"
 )
 
 // an OSV database that lives in-memory, and can be used by other structs

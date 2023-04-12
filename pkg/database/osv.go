@@ -3,9 +3,9 @@ package database
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/g-rath/osv-detector/internal"
-	"github.com/g-rath/osv-detector/pkg/lockfile"
-	"github.com/g-rath/osv-detector/pkg/semantic"
+	"github.com/cvescan/cvescan/internal"
+	"github.com/cvescan/cvescan/pkg/lockfile"
+	"github.com/cvescan/cvescan/pkg/semantic"
 	"os"
 	"regexp"
 	"strings"

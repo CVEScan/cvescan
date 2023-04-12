@@ -3,7 +3,7 @@ package database
 import (
 	"errors"
 	"fmt"
-	"github.com/g-rath/osv-detector/internal"
+	"github.com/cvescan/cvescan/internal"
 	"net/url"
 )
 

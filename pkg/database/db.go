@@ -1,6 +1,6 @@
 package database
 
-import "github.com/g-rath/osv-detector/internal"
+import "github.com/cvescan/cvescan/internal"
 
 type DB interface {
 	Name() string

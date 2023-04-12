@@ -2,8 +2,8 @@ package semantic_test
 
 import (
 	"errors"
-	"github.com/g-rath/osv-detector/pkg/lockfile"
-	"github.com/g-rath/osv-detector/pkg/semantic"
+	"github.com/cvescan/cvescan/pkg/lockfile"
+	"github.com/cvescan/cvescan/pkg/semantic"
 	"testing"
 )
 

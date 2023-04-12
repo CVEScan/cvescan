@@ -1,6 +1,6 @@
 package lockfile
 
-import "github.com/g-rath/osv-detector/internal"
+import "github.com/cvescan/cvescan/internal"
 
 type Ecosystem = internal.Ecosystem
 type PackageDetails = internal.PackageDetails

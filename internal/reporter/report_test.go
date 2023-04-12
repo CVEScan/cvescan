@@ -1,10 +1,10 @@
 package reporter_test
 
 import (
-	"github.com/g-rath/osv-detector/internal"
-	"github.com/g-rath/osv-detector/internal/reporter"
-	"github.com/g-rath/osv-detector/pkg/database"
-	"github.com/g-rath/osv-detector/pkg/lockfile"
+	"github.com/cvescan/cvescan/internal"
+	"github.com/cvescan/cvescan/internal/reporter"
+	"github.com/cvescan/cvescan/pkg/database"
+	"github.com/cvescan/cvescan/pkg/lockfile"
 	"strings"
 	"testing"
 )

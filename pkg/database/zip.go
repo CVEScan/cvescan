@@ -41,7 +41,7 @@ var ErrOfflineDatabaseNotFound = errors.New("no offline version of the OSV datab
 
 func (db *ZipDB) cachePath() string {
 	hash := sha256.Sum256([]byte(db.ArchiveURL))
-	fileName := fmt.Sprintf("osv-detector-%x-db.json", hash)
+	fileName := fmt.Sprintf("cvescan-%x-db.json", hash)
 
 	return filepath.Join(os.TempDir(), fileName)
 }

@@ -7,7 +7,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/g-rath/osv-detector/pkg/database"
+	"github.com/cvescan/cvescan/pkg/database"
 	"net/http"
 	"net/http/httptest"
 	"os"
@@ -44,7 +44,7 @@ type CleanUpZipServerFn = func()
 
 func cachePath(url string) string {
 	hash := sha256.Sum256([]byte(url))
-	fileName := fmt.Sprintf("osv-detector-%x-db.json", hash)
+	fileName := fmt.Sprintf("cvescan-%x-db.json", hash)
 
 	return filepath.Join(os.TempDir(), fileName)
 }

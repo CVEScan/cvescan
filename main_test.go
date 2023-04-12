@@ -120,7 +120,7 @@ func TestRun(t *testing.T) {
 			name:         "",
 			args:         []string{"--version"},
 			wantExitCode: 0,
-			wantStdout:   "osv-detector dev (unknown, commit none)",
+			wantStdout:   "cvescan dev (unknown, commit none)",
 			wantStderr:   "",
 		},
 		{
@@ -744,7 +744,7 @@ func TestRun_Configs(t *testing.T) {
 				Loaded the following OSV databases:
 
 				fixtures/configs-one/yarn.lock: found 0 packages
-					Using config at fixtures/configs-one/.osv-detector.yaml (0 ignores)
+					Using config at fixtures/configs-one/.cvescan.yaml (0 ignores)
 
 					no known vulnerabilities found
 			`,
@@ -758,7 +758,7 @@ func TestRun_Configs(t *testing.T) {
 				Loaded the following OSV databases:
 
 				fixtures/configs-two/yarn.lock: found 0 packages
-					Using config at fixtures/configs-two/.osv-detector.yaml (0 ignores)
+					Using config at fixtures/configs-two/.cvescan.yaml (0 ignores)
 
 					no known vulnerabilities found
 			`,
@@ -773,7 +773,7 @@ func TestRun_Configs(t *testing.T) {
 				Loaded the following OSV databases:
 
 				fixtures/configs-one/yarn.lock: found 0 packages
-					Using config at fixtures/configs-one/.osv-detector.yaml (0 ignores)
+					Using config at fixtures/configs-one/.cvescan.yaml (0 ignores)
 
 					no known vulnerabilities found
 			`,
@@ -788,13 +788,13 @@ func TestRun_Configs(t *testing.T) {
 					RubyGems (%% vulnerabilities, including withdrawn - last updated %%)
 
 				fixtures/configs-two/Gemfile.lock: found 1 package
-					Using config at fixtures/configs-two/.osv-detector.yaml (0 ignores)
+					Using config at fixtures/configs-two/.cvescan.yaml (0 ignores)
 					Using db RubyGems (%% vulnerabilities, including withdrawn - last updated %%)
 
 					no known vulnerabilities found
 
 				fixtures/configs-two/yarn.lock: found 0 packages
-					Using config at fixtures/configs-two/.osv-detector.yaml (0 ignores)
+					Using config at fixtures/configs-two/.cvescan.yaml (0 ignores)
 
 					no known vulnerabilities found
 			`,
@@ -812,7 +812,7 @@ func TestRun_Configs(t *testing.T) {
 					npm (%% vulnerabilities, including withdrawn - last updated %%)
 
 				fixtures/configs-one/yarn.lock: found 0 packages
-					Using config at fixtures/configs-one/.osv-detector.yaml (0 ignores)
+					Using config at fixtures/configs-one/.cvescan.yaml (0 ignores)
 
 					no known vulnerabilities found
 
@@ -844,7 +844,7 @@ func TestRun_Configs(t *testing.T) {
 					dir#file:/fixtures/configs-extra-dbs (0 vulnerabilities, including withdrawn)
 					zip#https://example.com/osvs/all
 				fixtures/configs-extra-dbs/yarn.lock: found 0 packages
-					Using config at fixtures/configs-extra-dbs/.osv-detector.yaml (0 ignores)
+					Using config at fixtures/configs-extra-dbs/.cvescan.yaml (0 ignores)
 					Using db api#https://example.com/v1 (using batches of 1000)
 					Using db dir#file:/fixtures/configs-extra-dbs (0 vulnerabilities, including withdrawn)
 
@@ -864,7 +864,7 @@ func TestRun_Configs(t *testing.T) {
 				Loaded the following OSV databases:
 
 				fixtures/configs-extra-dbs/yarn.lock: found 0 packages
-					Using config at fixtures/configs-extra-dbs/.osv-detector.yaml (0 ignores)
+					Using config at fixtures/configs-extra-dbs/.cvescan.yaml (0 ignores)
 
 					no known vulnerabilities found
 			`,
@@ -874,7 +874,7 @@ func TestRun_Configs(t *testing.T) {
 		{
 			name: "",
 			args: []string{
-				"--config", filepath.FromSlash("./fixtures/configs-extra-dbs/.osv-detector.yaml"),
+				"--config", filepath.FromSlash("./fixtures/configs-extra-dbs/.cvescan.yaml"),
 				"--no-config-databases",
 				filepath.FromSlash("./fixtures/locks-many/yarn.lock"),
 			},
@@ -884,7 +884,7 @@ func TestRun_Configs(t *testing.T) {
 					npm (%% vulnerabilities, including withdrawn - last updated %%)
 
 				fixtures/locks-many/yarn.lock: found 1 package
-					Using config at fixtures/configs-extra-dbs/.osv-detector.yaml (0 ignores)
+					Using config at fixtures/configs-extra-dbs/.cvescan.yaml (0 ignores)
 					Using db npm (%% vulnerabilities, including withdrawn - last updated %%)
 
 					no known vulnerabilities found
@@ -980,9 +980,9 @@ func TestRun_Configs(t *testing.T) {
 					no known vulnerabilities found
 			`,
 			wantStderr: `
-				Error, could not read fixtures/configs-invalid/.osv-detector.yaml: yaml: unmarshal errors:
+				Error, could not read fixtures/configs-invalid/.cvescan.yaml: yaml: unmarshal errors:
 					line 1: cannot unmarshal !!str ` + "`ignore ...`" + ` into configer.rawConfig
-				Error, could not read fixtures/configs-invalid/.osv-detector.yaml: yaml: unmarshal errors:
+				Error, could not read fixtures/configs-invalid/.cvescan.yaml: yaml: unmarshal errors:
 					line 1: cannot unmarshal !!str ` + "`ignore ...`" + ` into configer.rawConfig
 			`,
 		},
@@ -991,7 +991,7 @@ func TestRun_Configs(t *testing.T) {
 		{
 			name: "",
 			args: []string{
-				"--config", filepath.FromSlash("./fixtures/configs-invalid/.osv-detector.yaml"),
+				"--config", filepath.FromSlash("./fixtures/configs-invalid/.cvescan.yaml"),
 				filepath.FromSlash("./fixtures/configs-invalid"),
 				filepath.FromSlash("./fixtures/locks-one"),
 				filepath.FromSlash("./fixtures/locks-many"),
@@ -999,7 +999,7 @@ func TestRun_Configs(t *testing.T) {
 			wantExitCode: 127,
 			wantStdout:   "",
 			wantStderr: `
-				Error, could not read fixtures/configs-invalid/.osv-detector.yaml: yaml: unmarshal errors:
+				Error, could not read fixtures/configs-invalid/.cvescan.yaml: yaml: unmarshal errors:
 					line 1: cannot unmarshal !!str ` + "`ignore ...`" + ` into configer.rawConfig
 			`,
 		},

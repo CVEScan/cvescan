@@ -10,8 +10,8 @@ Currently, this uses the ecosystem databases provided by
 
 To install locally:
 
-1. Download [a release](https://github.com/G-Rath/osv-detector/releases)
-2. Rename it to `osv-detector`
+1. Download [a release](https://github.com/CVEScan/cvescan/releases)
+2. Rename it to `cvescan`
 3. Make it executable
 4. Put it somewhere that's on your PATH (optional)
    - `/usr/local/bin` is usually a good place on Ubuntu
@@ -20,16 +20,16 @@ You can use this script to install the latest version from GitHub (make sure to
 change the binary architecture if you're on macOS or Windows):
 
 ```shell
-OSV_DETECTOR_VERSION=$(curl -s "https://api.github.com/repos/G-Rath/osv-detector/releases/latest" | perl -nle'print substr($&, 1) while m#"tag_name": "\K[^"]*#g')
-OSV_DETECTOR_BINARY="osv-detector_${OSV_DETECTOR_VERSION}_linux_amd64"
+OSV_DETECTOR_VERSION=$(curl -s "https://api.github.com/repos/CVEScan/cvescan/releases/latest" | perl -nle'print substr($&, 1) while m#"tag_name": "\K[^"]*#g')
+OSV_DETECTOR_BINARY="cvescan_${OSV_DETECTOR_VERSION}_linux_amd64"
 
-curl -fL "https://github.com/G-Rath/osv-detector/releases/download/v$OSV_DETECTOR_VERSION/$OSV_DETECTOR_BINARY" --output /tmp/osv-detector
-chmod +x /tmp/osv-detector
-sudo mv /tmp/osv-detector /usr/local/bin/osv-detector
+curl -fL "https://github.com/CVEScan/cvescan/releases/download/v$OSV_DETECTOR_VERSION/$OSV_DETECTOR_BINARY" --output /tmp/cvescan
+chmod +x /tmp/cvescan
+sudo mv /tmp/cvescan /usr/local/bin/cvescan
 ```
 
 If you're using GitHub Actions, you can use the
-[check-with-osv-detector](https://github.com/marketplace/actions/check-with-osv-detector)
+[check-with-cvescan](https://github.com/marketplace/actions/check-with-cvescan)
 action.
 
 ## Usage
@@ -38,14 +38,14 @@ The detector accepts a path to a "lockfile" which contains information about the
 versions of packages:
 
 ```shell
-osv-detector path/to/my/package-lock.json
-osv-detector path/to/my/composer.lock
+cvescan path/to/my/package-lock.json
+cvescan path/to/my/composer.lock
 
 # you can also pass multiple files
-osv-detector path/to/my/package-lock.json path/to/my/composer.lock
+cvescan path/to/my/package-lock.json path/to/my/composer.lock
 
 # or a directory which is expected to contain at least one supported lockfile
-osv-detector path/to/my/
+cvescan path/to/my/
 ```
 
 The detector supports parsing the following lockfiles:
@@ -81,7 +81,7 @@ file based on the filename - you can manually specify the parser to use for all
 files with the `-parse-as` flag:
 
 ```shell
-osv-detector --parse-as 'package-lock.json' path/to/my/file.lock
+cvescan --parse-as 'package-lock.json' path/to/my/file.lock
 ```
 
 By default, the detector attempts to detect known vulnerabilities by checking
@@ -132,7 +132,7 @@ ignore certain vulnerabilities.
 You can use the `--json` flag to have the detector output its results as JSON:
 
 ```shell
-osv-detector --json path/to/my/package-lock.json
+cvescan --json path/to/my/package-lock.json
 ```
 
 This will result in a JSON object being printed to `stdout` with a `results`
@@ -182,15 +182,15 @@ makes it easy to provide advanced settings (such as extra databases), provide a
 consistent results whenever the detector is run on a project, and provide an
 audit trail of ignored vulnerabilities (through version control).
 
-By default, the detector will look for a `.osv-detector.yaml` or
-`.osv-detector.yml` in the same folder as the current lockfile it's checking,
+By default, the detector will look for a `.cvescan.yaml` or
+`.cvescan.yml` in the same folder as the current lockfile it's checking,
 and will _merge_ the config with any flags being passed.
 
 You can also provide a path to a specific config file that will be used for all
 lockfiles being checked with the `--config` flag:
 
 ```shell
-osv-detector --config ruby-ignores.yml path/to/my/first-ruby-project path/to/my/second-ruby-project
+cvescan --config ruby-ignores.yml path/to/my/first-ruby-project path/to/my/second-ruby-project
 ```
 
 You can have the detector ignore specific parts of the config with the
@@ -215,10 +215,10 @@ ignore:
 You can also use the `--ignore` flag:
 
 ```
-osv-detector --ignore GHSA-896r-f27r-55mw package-lock.json
+cvescan --ignore GHSA-896r-f27r-55mw package-lock.json
 
 # you can pass multiple ignores
-osv-detector --ignore GHSA-896r-f27r-55mw --ignore GHSA-74fj-2j2h-c42q package-lock.json
+cvescan --ignore GHSA-896r-f27r-55mw --ignore GHSA-74fj-2j2h-c42q package-lock.json
 ```
 
 Ignores provided via the flag will be combined with any ignores specified in the
@@ -228,7 +228,7 @@ You can use `jq` to generate a list of OSV ids if you want to ignore all current
 known vulnerabilities found by the detector:
 
 ```shell
-osv-detector --json . | jq -r  '.results[].packages | map("- " + .vulnerabilities[].id) | unique | sort | .[]'
+cvescan --json . | jq -r  '.results[].packages | map("- " + .vulnerabilities[].id) | unique | sort | .[]'
 ```
 
 #### Extra Databases
@@ -316,7 +316,7 @@ extra-databases:
 You can have the detector run purely in offline mode with the `--offline` flag:
 
 ```shell
-osv-detector --offline path/to/my/file.lock
+cvescan --offline path/to/my/file.lock
 ```
 
 Remotely sourced databases can only be used in offline mode if they have been
@@ -339,13 +339,13 @@ the detector doesn't know about, such as `NuGet`.
 You can either pass in CSV rows:
 
 ```
-osv-detector --parse-as csv-row 'npm,,@typescript-eslint/types,5.13.0' 'Packagist,sentry/sdk,2.0.4'
+cvescan --parse-as csv-row 'npm,,@typescript-eslint/types,5.13.0' 'Packagist,sentry/sdk,2.0.4'
 ```
 
 or you can specify paths to csv files:
 
 ```
-osv-detector --parse-as csv-file path/to/my/first-csv path/to/my/second-csv
+cvescan --parse-as csv-file path/to/my/first-csv path/to/my/second-csv
 ```
 
 Each CSV row represents a package and is made up of at least four fields:
@@ -384,7 +384,7 @@ You can also omit the version to have the detector list all known
 vulnerabilities in the loaded database that apply to the given package:
 
 ```
-osv-detector --parse-as csv-row 'NuGet,,Yarp.ReverseProxy,'
+cvescan --parse-as csv-row 'NuGet,,Yarp.ReverseProxy,'
 ```
 
 While this uses the `--parse-as` flag, these are _not_ considered standard
@@ -402,7 +402,7 @@ Lists all the ecosystems that the detector knows about (aka there is a parser
 that results in packages from that ecosystem):
 
 ```
-$ osv-detector --list-ecosystems
+$ cvescan --list-ecosystems
 The detector supports parsing for the following ecosystems:
   npm
   crates.io
@@ -422,7 +422,7 @@ Each package is outputted on its own line, in the format of
 `<ecosystem>: <name>@<version>`:
 
 ```
-$ osv-detector --list-packages /path/to/my/Gemfile.lock
+$ cvescan --list-packages /path/to/my/Gemfile.lock
 Loaded 6532 vulnerabilities (including withdrawn, last updated Fri, 04 Mar 2022 00:11:50 GMT)
 The following packages were found in /path/to/my/Gemfile.lock:
   RubyGems: ast@2.4.2
