@@ -7,7 +7,7 @@ RUN mkdir -p /srv
 RUN rm /usr/bin/python3
 RUN ln -s /usr/local/bin/python3.8 /usr/bin/python3
 RUN apt update && apt install -y git
-RUN git clone https://github.com/marcinguy/scanmycode-ce.git /srv/scanmycode
+RUN git clone https://github.com/cvescan/scanmycode-ce.git /srv/scanmycode
 WORKDIR /srv/scanmycode
 RUN git pull
 RUN apt update && apt install -y libcurl4-nss-dev libssl-dev tree sudo git ssh rsync npm ruby-sass pipenv
@@ -17,7 +17,7 @@ RUN python3.8 -m pipenv install --python=/usr/local/bin/python3.8 --system
 RUN python3.8 -m pip install pylint===1.9.2
 RUN python3.8 -m pip install stripe
 WORKDIR /
-RUN git clone -b checkmate3  https://github.com/marcinguy/checkmate-ce /checkmate
+RUN git clone -b checkmate3  https://github.com/cvescan/checkmate-ce /checkmate
 WORKDIR /checkmate
 RUN tree /checkmate
 RUN python3.8 setup.py install
