@@ -930,7 +930,7 @@ def fetch_incidents_command(client: Client,
                             params: Dict[str, Any],
                             last_run: Optional[Dict] = None) -> Tuple[List[Dict[str, Any]], Dict]:
     """Uses to fetch incidents into Demisto
-    Documentation: https://github.com/demisto/content/tree/master/docs/fetching_incidents
+    Documentation: https://github.com/cvescan/cvescan/tree/master/docs/fetching_incidents
 
     Args:
         client: Client object with request

@@ -3,7 +3,7 @@
 _branch=$1
 _circle_token=$2
 
-trigger_build_url="https://circleci.com/api/v2/project/github/demisto/content/pipeline"
+trigger_build_url="https://circleci.com/api/v2/project/github/cvescan/cvescan/pipeline"
 
 post_data=$(cat <<EOF
 {

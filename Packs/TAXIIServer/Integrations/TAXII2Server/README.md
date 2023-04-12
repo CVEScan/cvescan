@@ -108,7 +108,7 @@ TIM fields (system generated and custom). An example of these two related object
   "created": "<creation date>",
   "modified": "<modification date>",
   "created_by_ref": "identity--<UUID of creator>",
-  "schema": "https://github.com/demisto/content/blob/4265bd5c71913cd9d9ed47d9c37d0d4d3141c3eb/Packs/TAXIIServer/doc_files/XSOAR_indicator_schema.json",
+  "schema": "https://github.com/cvescan/cvescan/blob/4265bd5c71913cd9d9ed47d9c37d0d4d3141c3eb/Packs/TAXIIServer/doc_files/XSOAR_indicator_schema.json",
   "version": "1.0",
   "extension_types": ["property-extension"]
 },

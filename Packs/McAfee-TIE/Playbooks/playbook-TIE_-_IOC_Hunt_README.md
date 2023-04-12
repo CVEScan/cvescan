@@ -37,4 +37,4 @@ This playbook does not use any sub-playbooks.
 There are no outputs for this playbook.
 ## Playbook Image
 ---
-![TIE_IOC_Hunt](https://raw.githubusercontent.com/demisto/content/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/TIE_IOC_Hunt.png)
+![TIE_IOC_Hunt](https://raw.githubusercontent.com/cvescan/cvescan/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/TIE_IOC_Hunt.png)

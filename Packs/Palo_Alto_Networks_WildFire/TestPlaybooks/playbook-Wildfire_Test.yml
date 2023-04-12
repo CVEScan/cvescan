@@ -432,7 +432,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/verdicts_for_wildfire_test_pb.txt
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/verdicts_for_wildfire_test_pb.txt
     separatecontext: false
     view: |-
       {

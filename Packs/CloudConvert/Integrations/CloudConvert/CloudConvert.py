@@ -419,7 +419,7 @@ def test_module(client: Client):
         'ok' if test passed, anything else will fail the test
     """
 
-    dummy_url = 'https://raw.githubusercontent.com/demisto/content/master/TestData/pdfworking.pdf'
+    dummy_url = 'https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/pdfworking.pdf'
     result = client.upload_url({'url': dummy_url})
     if result.get('data'):
         return 'ok'

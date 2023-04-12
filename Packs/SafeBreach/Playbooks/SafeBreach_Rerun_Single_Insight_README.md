@@ -40,4 +40,4 @@ This playbook does not use any sub-playbooks.
 
 ## Playbook Image
 ---
-![SafeBreach - Rerun Single Insight](https://github.com/demisto/content/raw/6af01e00312a5558e9e2fecdb22534e98414bc9c/Packs/SafeBreach/doc_imgs/SafeBreach_Rerun_Single_Insight.png)
+![SafeBreach - Rerun Single Insight](https://github.com/cvescan/cvescan/raw/6af01e00312a5558e9e2fecdb22534e98414bc9c/Packs/SafeBreach/doc_imgs/SafeBreach_Rerun_Single_Insight.png)

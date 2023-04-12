@@ -62,7 +62,7 @@ tasks:
       unsecure:
         simple: "true"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/Hashes_list.csv
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/Hashes_list.csv
       username: {}
     separatecontext: false
     view: |-
@@ -270,7 +270,7 @@ tasks:
       unsecure:
         simple: "true"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/IndicatorsList.txt
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/IndicatorsList.txt
       username: {}
     separatecontext: false
     view: |-
@@ -431,7 +431,7 @@ tasks:
       unsecure:
         simple: "true"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/IndicatorsXls.xlsx
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/IndicatorsXls.xlsx
       username: {}
     separatecontext: false
     view: |-

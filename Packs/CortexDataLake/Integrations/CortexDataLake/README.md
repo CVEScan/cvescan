@@ -12,7 +12,7 @@ This integration was integrated and tested with version 2 of Cortex Data Lake XS
 1. Go to the Palo Alto Networks [HUB](https://apps.paloaltonetworks.com/apps) and select and add the **Cortex XSOAR** app as described [here](https://docs.paloaltonetworks.com/hub/hub-getting-started/get-started/accessing-applications.html).
 The following screen will appear:
 
-   ![image](https://github.com/demisto/content-docs/blob/master/docs/doc_imgs/integrations/cdl-authorization.png?raw=true)
+   ![image](https://github.com/cvescan/cvescan-docs/blob/master/docs/doc_imgs/integrations/cdl-authorization.png?raw=true)
 
 2. In the Palo Alto Networks Cortex XSOAR Playground or War Room, run the ***!GetLicenseID*** command to get the License ID.
 The License ID will be used in Step 4.

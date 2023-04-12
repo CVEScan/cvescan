@@ -99,4 +99,4 @@ This playbook does not use any integrations.
 
 ## Playbook Image
 ---
-![Detonate_File_McAfee_ATD](https://raw.githubusercontent.com/demisto/content/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/ATD_Detonate_File.png)
+![Detonate_File_McAfee_ATD](https://raw.githubusercontent.com/cvescan/cvescan/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/ATD_Detonate_File.png)

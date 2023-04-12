@@ -21,12 +21,12 @@ NON_PRIVATE_BUILD_FILES = ['Tests/Marketplace/landingPage_sections.json',
                            'Tests/Marketplace/validate_landing_page_sections.py',
                            'Tests/Marketplace/Tests/validate_landing_page_sections_test.py']
 
-TRIGGER_BUILD_URL_ON_MASTER = 'https://api.github.com/repos/demisto/content-private/dispatches'
+TRIGGER_BUILD_URL_ON_MASTER = 'https://api.github.com/repos/cvescan/cvescan-private/dispatches'
 TRIGGER_BUILD_URL_ON_CUSTOM_BRANCH = \
-    'https://api.github.com/repos/demisto/content-private/actions/workflows/config.yml/dispatches'
-GET_DISPATCH_WORKFLOWS_URL = 'https://api.github.com/repos/demisto/content-private/actions/runs'
-WORKFLOW_HTML_URL = 'https://github.com/demisto/content-private/actions/runs'
-GET_WORKFLOW_URL = 'https://api.github.com/repos/demisto/content-private/actions/runs/{:s}/jobs'
+    'https://api.github.com/repos/cvescan/cvescan-private/actions/workflows/config.yml/dispatches'
+GET_DISPATCH_WORKFLOWS_URL = 'https://api.github.com/repos/cvescan/cvescan-private/actions/runs'
+WORKFLOW_HTML_URL = 'https://github.com/cvescan/cvescan-private/actions/runs'
+GET_WORKFLOW_URL = 'https://api.github.com/repos/cvescan/cvescan-private/actions/runs/{:s}/jobs'
 
 PRIVATE_REPO_WORKFLOW_ID_FILE = 'PRIVATE_REPO_WORKFLOW_ID.txt'
 

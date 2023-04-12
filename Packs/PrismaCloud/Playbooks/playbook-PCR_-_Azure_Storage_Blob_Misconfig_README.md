@@ -34,4 +34,4 @@ There are no outputs for this playbook.
 
 ## Playbook Image
 ---
-![Prisma Cloud Remediation - Azure Storage Blob Misconfiguration](https://github.com/demisto/content/raw/master/Packs/PrismaCloud/doc_files/PCR_-_Azure_Storage_Blob_Misconfig.png
+![Prisma Cloud Remediation - Azure Storage Blob Misconfiguration](https://github.com/cvescan/cvescan/raw/master/Packs/PrismaCloud/doc_files/PCR_-_Azure_Storage_Blob_Misconfig.png

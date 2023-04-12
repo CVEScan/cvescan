@@ -30,7 +30,7 @@ _time_to_live=$3
 _contrib_branch=$4
 _changed_pack=$5
 
-trigger_build_url="https://circleci.com/api/v2/project/github/demisto/content/pipeline"
+trigger_build_url="https://circleci.com/api/v2/project/github/cvescan/cvescan/pipeline"
 
 
 if [ -z $_time_to_live ] || [ $_time_to_live -lt 180 ]

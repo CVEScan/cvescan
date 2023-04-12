@@ -465,7 +465,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://github.com/demisto/content/raw/master/TestData/TestPcapPost.pcap
+        simple: https://github.com/cvescan/cvescan/raw/master/TestData/TestPcapPost.pcap
       username: {}
     separatecontext: false
     view: |-

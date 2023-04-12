@@ -9,7 +9,7 @@ import requests
 import json
 
 SCRIPT_NAME = 'DeleteContent'
-CORE_PACKS_LIST_URL = "https://raw.githubusercontent.com/demisto/content/master/Tests/Marketplace/core_packs_list.json"
+CORE_PACKS_LIST_URL = "https://raw.githubusercontent.com/cvescan/cvescan/master/Tests/Marketplace/core_packs_list.json"
 
 
 def verify_search_response_in_list(response: Any, name: str):

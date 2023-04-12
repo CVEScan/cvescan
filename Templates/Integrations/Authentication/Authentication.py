@@ -37,7 +37,7 @@ class Client(BaseClient):
 
     def list_credentials(self) -> Dict:
         """Uses to fetch credentials into Demisto
-        Documentation: https://github.com/demisto/content/tree/master/docs/fetching_credentials
+        Documentation: https://github.com/cvescan/cvescan/tree/master/docs/fetching_credentials
 
         Returns:
             Response JSON
@@ -215,7 +215,7 @@ def test_module_command(client: Client, *_) -> str:
 
 def fetch_credentials(client: Client) -> list:
     """Uses to fetch credentials into Demisto
-    Documentation: https://github.com/demisto/content/tree/master/docs/fetching_credentials
+    Documentation: https://github.com/cvescan/cvescan/tree/master/docs/fetching_credentials
 
     Args:
         client: Client object

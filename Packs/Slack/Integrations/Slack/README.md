@@ -913,9 +913,9 @@ There is no context output for this command.
 <h3>Change the name of the Cortex XSOAR App</h3>
 <p>You can change the name and icon of the Cortex XSOAR app in direct messages using the integration configuration settings (parameters). In order to change the name of the application itself, do the following:</p>
 <ul>
-<li>Go to the app in the **Apps** section in Slack<img alt="" src="https://github.com/demisto/content/raw/09eaa5901b0967706af2e83dfad567321e72ead8/Packs/Slack/doc_files/slack-apps.png"/></li>
-<li> In the app, go to **About > Settings**: <img alt="" src="https://github.com/demisto/content/raw/09eaa5901b0967706af2e83dfad567321e72ead8/Packs/Slack/doc_files/slack-app-about.png"/></li>
-<li>Scroll down and click the pencil icon to change the name. <img alt="" src="https://github.com/demisto/content/raw/09eaa5901b0967706af2e83dfad567321e72ead8/Packs/Slack/doc_files/slack-app-name.png"/></li>
+<li>Go to the app in the **Apps** section in Slack<img alt="" src="https://github.com/cvescan/cvescan/raw/09eaa5901b0967706af2e83dfad567321e72ead8/Packs/Slack/doc_files/slack-apps.png"/></li>
+<li> In the app, go to **About > Settings**: <img alt="" src="https://github.com/cvescan/cvescan/raw/09eaa5901b0967706af2e83dfad567321e72ead8/Packs/Slack/doc_files/slack-app-about.png"/></li>
+<li>Scroll down and click the pencil icon to change the name. <img alt="" src="https://github.com/cvescan/cvescan/raw/09eaa5901b0967706af2e83dfad567321e72ead8/Packs/Slack/doc_files/slack-app-name.png"/></li>
 </ul>
 <h3>Direct messages</h3>
 <p>You can send direct messages to the Cortex XSOAR app on Slack using the following commands:</p>
@@ -941,7 +941,7 @@ If a dedicated channel for incident notifications is configured, the following n
 <span>The integration supports sending "blocks" to Slack. Blocks are a series of components that can be combined to create visually rich and compellingly interactive messages. In the integration, they can be sent as an array of JSON. More information about that <a href="https://api.slack.com/reference/block-kit/blocks">here.</a> You can experiment with and build your own blocks <a href="https://api.slack.com/tools/block-kit-builder">here.</a>
 The integration also allows some level of interactivity. When a user interacts with an element in a Slack message, Slack sends a request with the relevant information. 
 This request is processed and stored by a dedicated endpoint outside of Cortex XSOAR in the address: <code>https://oproxy.demisto.ninja</code>
-The integration allows polling this endpoint for user interactions that contain entitlement strings, which are used to perform actions in Cortex XSOAR by external users. See the <a href="https://github.com/demisto/content/tree/master/Packs/Slack/Scripts/SlackAsk">SlackAsk</a> script for an example.
+The integration allows polling this endpoint for user interactions that contain entitlement strings, which are used to perform actions in Cortex XSOAR by external users. See the <a href="https://github.com/cvescan/cvescan/tree/master/Packs/Slack/Scripts/SlackAsk">SlackAsk</a> script for an example.
 This means that in order to enable interactivity using the integration, connection to this endpoint has to be enabled.</span>
 The following information is sent to the dedicated endpoint in the request:
 <h5>Headers</h5>
@@ -967,5 +967,5 @@ The following information is sent to the dedicated endpoint in the request:
 </ul>
 <h2>Troubleshooting</h2>
 <p>If messages are not mirrored in Cortex XSOAR, or direct messages are not handled properly, check the integration status on the integration page:</p>
-<img alt="" src="https://github.com/demisto/content/raw/09eaa5901b0967706af2e83dfad567321e72ead8/Packs/Slack/doc_files/slack-health.png"/>
+<img alt="" src="https://github.com/cvescan/cvescan/raw/09eaa5901b0967706af2e83dfad567321e72ead8/Packs/Slack/doc_files/slack-health.png"/>
 <br>

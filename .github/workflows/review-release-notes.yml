@@ -7,7 +7,7 @@ env:
 jobs:
   release_notes_review:
     runs-on: ubuntu-latest
-    if: github.repository == 'demisto/content'
+    if: github.repository == 'cvescan/cvescan'
     steps:
 
       - name: Checkout

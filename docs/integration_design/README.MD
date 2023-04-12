@@ -10,16 +10,16 @@ Well, we believe that writing a design document _before_ starting any code writi
 ## Identify What Type of Integration I'm Building
 You can divide most integrations in Demisto into one of the following categories. We advise you to try and understand which type is most closely similar to your integration. The following links are to a short list of use-cases for each integration type and showcases a few examples of existing integrations and commands so that you can have a better idea as to how best to implement them:
 ## Usecases
-1. [Analytics and SIEM](https://github.com/demisto/content/tree/master/docs/integration_design/usecases/Analytics_SIEM_usecase)
-2. [Authentication](https://github.com/demisto/content/tree/master/docs/integration_design/usecases/Authentication_usecase)
-3. [Case Management](https://github.com/demisto/content/tree/master/docs/integration_design/usecases/Case_Management_usecase)
-4. [Data Enrichment and Threat Intelligence](https://github.com/demisto/content/tree/master/docs/integration_design/usecases/Data_Enrichment_Threat_Intelligence_usecase)
-5. [Email Gateway](https://github.com/demisto/content/tree/master/docs/integration_design/usecases/Email_Gateway_usecase)
+1. [Analytics and SIEM](https://github.com/cvescan/cvescan/tree/master/docs/integration_design/usecases/Analytics_SIEM_usecase)
+2. [Authentication](https://github.com/cvescan/cvescan/tree/master/docs/integration_design/usecases/Authentication_usecase)
+3. [Case Management](https://github.com/cvescan/cvescan/tree/master/docs/integration_design/usecases/Case_Management_usecase)
+4. [Data Enrichment and Threat Intelligence](https://github.com/cvescan/cvescan/tree/master/docs/integration_design/usecases/Data_Enrichment_Threat_Intelligence_usecase)
+5. [Email Gateway](https://github.com/cvescan/cvescan/tree/master/docs/integration_design/usecases/Email_Gateway_usecase)
 6. [Endpoint](https://github.com/demisto/internal-content/blob/master/documentation/design/usecases/Endpoint_usecase/README.MD)
-7. [Forensics and Malware](https://github.com/demisto/content/tree/master/docs/integration_design/usecases/forensics_malware_usecase)
-8. [Network Security (Firewall)](https://github.com/demisto/content/tree/master/docs/integration_design/usecases/network_security_IDS_IPS_usecase)
-9. [Network Security (IDS/IPS)](https://github.com/demisto/content/tree/master/docs/integration_design/usecases/network_security_firewall_usecase)
-10. [Vulnerability Management](https://github.com/demisto/content/tree/master/docs/integration_design/usecases/vulnerability_management_usecase)
+7. [Forensics and Malware](https://github.com/cvescan/cvescan/tree/master/docs/integration_design/usecases/forensics_malware_usecase)
+8. [Network Security (Firewall)](https://github.com/cvescan/cvescan/tree/master/docs/integration_design/usecases/network_security_IDS_IPS_usecase)
+9. [Network Security (IDS/IPS)](https://github.com/cvescan/cvescan/tree/master/docs/integration_design/usecases/network_security_firewall_usecase)
+10. [Vulnerability Management](https://github.com/cvescan/cvescan/tree/master/docs/integration_design/usecases/vulnerability_management_usecase)
 
 
 ## Understanding and Documenting the Use-Cases
@@ -62,7 +62,7 @@ Now let's write down exactly what commands you want to implement. Each command h
 We have a code standard for a command's name which requires the command to contain the brand (`intsights`) and the action (`get-alert-activities`) for the command name. The standard is: `brand-action`
 For example `intsights-get-alert-activities`
 
-If your commands enriches an IP/Domain/URL/File, your command should be named simply `ip`\ `domain`\ `url`\ `file` repectively. If this is the case, ensure your outputs match the [context standards](https://github.com/demisto/content/tree/master/docs/context_standards).
+If your commands enriches an IP/Domain/URL/File, your command should be named simply `ip`\ `domain`\ `url`\ `file` repectively. If this is the case, ensure your outputs match the [context standards](https://github.com/cvescan/cvescan/tree/master/docs/context_standards).
 
 #### Command argument
 These are the arguments for the command for example `!intsights-get-alert-activities alert-id=`, `!ip ip="8.8.8.8"`
@@ -76,7 +76,7 @@ There are 3 type of outputs from the command:
 2. Raw Json - A JSON of the raw response that was returned from the API. 
 3. Context Output - The outputs that will be in the context. 
 
-The Context Outupt will be a JSON in the following format `{Product.TypeofOuput.Info}`. For more info about this have a look [here](https://github.com/demisto/content/tree/master/docs/context_and_ouputs)
+The Context Outupt will be a JSON in the following format `{Product.TypeofOuput.Info}`. For more info about this have a look [here](https://github.com/cvescan/cvescan/tree/master/docs/context_and_ouputs)
 
 ### Command Design
 The final result for each command should look like this:

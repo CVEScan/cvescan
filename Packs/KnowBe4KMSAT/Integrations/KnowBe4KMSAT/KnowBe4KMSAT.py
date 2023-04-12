@@ -10,7 +10,7 @@ Code Conventions: https://xsoar.pan.dev/docs/integrations/code-conventions
 Linting: https://xsoar.pan.dev/docs/integrations/linting
 
 This is an empty structure file. Check an example at;
-https://github.com/demisto/content/blob/master/Packs/HelloWorld/Integrations/HelloWorld/HelloWorld.py
+https://github.com/cvescan/cvescan/blob/master/Packs/HelloWorld/Integrations/HelloWorld/HelloWorld.py
 
 """
 from CommonServerPython import *  # noqa # pylint: disable=unused-wildcard-import

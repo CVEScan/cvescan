@@ -70,7 +70,7 @@ There is no context output for this command.
 
 ## Video Demo
 <video controls>
-    <source src="https://github.com/demisto/content-assets/raw/7982404664dc68c2035b7c701d093ec026628802/Assets/FeedAlienVault/AlienVault_OTX_Feed_Demo.mp4"
+    <source src="https://github.com/cvescan/cvescan-assets/raw/7982404664dc68c2035b7c701d093ec026628802/Assets/FeedAlienVault/AlienVault_OTX_Feed_Demo.mp4"
             type="video/mp4"/>
-    Sorry, your browser doesn't support embedded videos. You can download the video at: https://github.com/demisto/content-assets/blob/7982404664dc68c2035b7c701d093ec026628802/Assets/FeedAlienVault/AlienVault_OTX_Feed_Demo.mp4
+    Sorry, your browser doesn't support embedded videos. You can download the video at: https://github.com/cvescan/cvescan-assets/blob/7982404664dc68c2035b7c701d093ec026628802/Assets/FeedAlienVault/AlienVault_OTX_Feed_Demo.mp4
 </video>

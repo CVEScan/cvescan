@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/demisto/content.git"
+    "url": "git+https://github.com/cvescan/cvescan.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/demisto/content/issues"
+    "url": "https://github.com/cvescan/cvescan/issues"
   },
-  "homepage": "https://github.com/demisto/content#readme",
+  "homepage": "https://github.com/cvescan/cvescan#readme",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "commander": "^5.1.0",

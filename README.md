@@ -1,13 +1,13 @@
 ![Content logo](xsoar_content_logo.png)
 
-[![CircleCI](https://circleci.com/gh/demisto/content.svg?style=svg)](https://circleci.com/gh/demisto/content)
-[![Open in Visual Studio Code](https://img.shields.io/badge/Open%20in%20Visual%20Studio%20Code-0078d7.svg?&logo=visual-studio-code)](https://open.vscode.dev/demisto/content)
+[![CircleCI](https://circleci.com/gh/cvescan/cvescan.svg?style=svg)](https://circleci.com/gh/cvescan/cvescan)
+[![Open in Visual Studio Code](https://img.shields.io/badge/Open%20in%20Visual%20Studio%20Code-0078d7.svg?&logo=visual-studio-code)](https://open.vscode.dev/cvescan/cvescan)
 
-[![Open in Remote-Containers](https://img.shields.io/static/v1?label=Remote%20-%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=git@github.com:demisto/content.git)
+[![Open in Remote-Containers](https://img.shields.io/static/v1?label=Remote%20-%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=git@github.com:cvescan/cvescan.git)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=master&repo=60525392&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestEurope)
 
 
-If you already have VS Code and Docker installed, you can click the badge above or [here](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=git@github.com:demisto/content.git) to get started. Clicking these links opens VS Code, installs the `Remote-Containers` extension (if not installed), clones the source code into a container volume, and spins up a development container, configured with all recommended settings.
+If you already have VS Code and Docker installed, you can click the badge above or [here](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=git@github.com:cvescan/cvescan.git) to get started. Clicking these links opens VS Code, installs the `Remote-Containers` extension (if not installed), clones the source code into a container volume, and spins up a development container, configured with all recommended settings.
 
 # Cortex XSOAR Platform - Content Repository
 #### Demisto is now Cortex XSOAR.

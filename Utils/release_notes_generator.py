@@ -52,8 +52,8 @@ def get_new_packs(git_sha1):
             'Unable to get the SHA1 of the commit in which the version was released. This can happen if your '
             'branch is not updated with origin master. Merge from origin master and, try again.\n'
             'If you\'re not on a fork, run "git merge origin/master".\n'
-            'If you are on a fork, first set https://github.com/demisto/content to be '
-            'your upstream by running "git remote add upstream https://github.com/demisto/content". After '
+            'If you are on a fork, first set https://github.com/cvescan/cvescan to be '
+            'your upstream by running "git remote add upstream https://github.com/cvescan/cvescan". After '
             'setting the upstream, run "git fetch upstream", and then run "git merge upstream/master". Doing '
             'these steps will merge your branch with content master as a base.')
         sys.exit(1)
@@ -185,8 +185,8 @@ def get_all_modified_release_note_files(git_sha1):
             'Unable to get the SHA1 of the commit in which the version was released. This can happen if your '
             'branch is not updated with origin master. Merge from origin master and, try again.\n'
             'If you\'re not on a fork, run "git merge origin/master".\n'
-            'If you are on a fork, first set https://github.com/demisto/content to be '
-            'your upstream by running "git remote add upstream https://github.com/demisto/content". After '
+            'If you are on a fork, first set https://github.com/cvescan/cvescan to be '
+            'your upstream by running "git remote add upstream https://github.com/cvescan/cvescan". After '
             'setting the upstream, run "git fetch upstream", and then run "git merge upstream/master". Doing '
             'these steps will merge your branch with content master as a base.')
         sys.exit(1)
@@ -428,7 +428,7 @@ def get_release_notes_draft(github_token, asset_id):
     requests.packages.urllib3.disable_warnings()  # pylint: disable=no-member
 
     try:
-        res = requests.get('https://api.github.com/repos/demisto/content/releases',
+        res = requests.get('https://api.github.com/repos/cvescan/cvescan/releases',
                            verify=False,  # guardrails-disable-line
                            headers={'Authorization': 'token {}'.format(github_token)})
     except requests.exceptions.ConnectionError as exc:

@@ -45,4 +45,4 @@ This playbook does not use any commands.
 
 ## Playbook Image
 ---
-![IP_Enrichment_Internal_Generic_v2](https://raw.githubusercontent.com/demisto/content/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/IP_Enrichment_Internal_Generic_v2.png)
+![IP_Enrichment_Internal_Generic_v2](https://raw.githubusercontent.com/cvescan/cvescan/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/IP_Enrichment_Internal_Generic_v2.png)

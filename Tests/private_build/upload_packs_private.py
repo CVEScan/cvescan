@@ -259,7 +259,7 @@ def create_and_upload_marketplace_pack(upload_config: Any, pack: Pack, storage_b
     :param index_folder_path: Path to the index folder.
     :param packs_dependencies_mapping: Used by format_metadata to add dependencies to the metadata file.
     :param private_storage_bucket: Bucket where the private packs are uploaded.
-    :param content_repo: The main content repository. demisto/content
+    :param content_repo: The main content repository. cvescan/cvescan
     :param current_commit_hash: Current commit hash for the run. Used in the pack metadata file.
     :param remote_previous_commit_hash: Previous commit hash. Used for comparison.
     :return: Updated pack.status value.

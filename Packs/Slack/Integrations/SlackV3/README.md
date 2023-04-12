@@ -81,7 +81,7 @@ Channel IDs typically follow the format `C` + an alphanumeric string.
 ![create-app-3](../../doc_files/SlackDocs_create_app3.png)
 
 5. Copy the text in the file
-   found [here](https://raw.githubusercontent.com/demisto/content/master/Packs/Slack/doc_files/SlackV3_app_manifest.yml)
+   found [here](https://raw.githubusercontent.com/cvescan/cvescan/master/Packs/Slack/doc_files/SlackV3_app_manifest.yml)
    . The text is a manifest template with the recommended configuration for your app.
 6. Paste the copied text into the field "YAML" and click **Next**.
 

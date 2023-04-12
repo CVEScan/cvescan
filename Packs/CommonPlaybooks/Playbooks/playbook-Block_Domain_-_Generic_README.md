@@ -40,4 +40,4 @@ There are no outputs for this playbook.
 
 ## Playbook Image
 ---
-![Block Domain - Generic](https://raw.githubusercontent.com/demisto/content/1e47fd21eeafbbfe06e6261f0eaaa00d88f78756/Packs/CommonPlaybooks/doc_files/Block_Domain_-_Generic.png)
+![Block Domain - Generic](https://raw.githubusercontent.com/cvescan/cvescan/1e47fd21eeafbbfe06e6261f0eaaa00d88f78756/Packs/CommonPlaybooks/doc_files/Block_Domain_-_Generic.png)

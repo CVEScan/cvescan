@@ -35,7 +35,7 @@ def get_pr_comments_url(pr_number: str) -> str:
     Returns:
         The comments URL for the PR.
     """
-    pr_url = f'https://api.github.com/repos/demisto/content/pulls/{pr_number}'
+    pr_url = f'https://api.github.com/repos/cvescan/cvescan/pulls/{pr_number}'
     response = requests.get(pr_url)
     response.raise_for_status()
     pr = response.json()

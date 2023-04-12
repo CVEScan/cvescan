@@ -878,7 +878,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/IndicatorsList.txt
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/IndicatorsList.txt
     separatecontext: false
     view: |-
       {
@@ -989,7 +989,7 @@ tasks:
       as_user:
         simple: testfromurl
       script_url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/IndicatorsList.txt
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/IndicatorsList.txt
     separatecontext: false
     view: |-
       {

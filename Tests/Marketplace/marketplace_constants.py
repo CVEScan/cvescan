@@ -145,7 +145,7 @@ class Metadata(object):
     XSOAR_AUTHOR = "Cortex XSOAR"
     SERVER_DEFAULT_MIN_VERSION = "6.0.0"
     CERTIFIED = "certified"
-    EULA_URL = "https://github.com/demisto/content/blob/master/LICENSE"  # disable-secrets-detection
+    EULA_URL = "https://github.com/cvescan/cvescan/blob/master/LICENSE"  # disable-secrets-detection
     CURRENT_VERSION = 'currentVersion'
     SERVER_MIN_VERSION = 'serverMinVersion'
     HIDDEN = 'hidden'

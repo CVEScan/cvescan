@@ -38,4 +38,4 @@ This playbook does not use any scripts.
 
 ## Playbook Image
 ---
-![Convert_file_hash_to_corresponding_hashes](https://raw.githubusercontent.com/demisto/content/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/Convert_file_hash_to_corresponding_hashes.png)
+![Convert_file_hash_to_corresponding_hashes](https://raw.githubusercontent.com/cvescan/cvescan/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/Convert_file_hash_to_corresponding_hashes.png)

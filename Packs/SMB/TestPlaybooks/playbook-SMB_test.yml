@@ -159,7 +159,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://github.com/demisto/content/raw/master/TestData/hebrew_file.txt
+        simple: https://github.com/cvescan/cvescan/raw/master/TestData/hebrew_file.txt
     separatecontext: false
     continueonerrortype: ""
     view: |-

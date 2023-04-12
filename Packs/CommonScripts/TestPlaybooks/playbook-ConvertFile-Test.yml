@@ -92,7 +92,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://github.com/demisto/content/raw/41a4882debfb658567bf95f91d47f0eb242a2785/Scripts/ConvertFile/test_data/MS-DOCX-190319.docx
+        simple: https://github.com/cvescan/cvescan/raw/41a4882debfb658567bf95f91d47f0eb242a2785/Scripts/ConvertFile/test_data/MS-DOCX-190319.docx
       username: {}
     separatecontext: false
     view: |-

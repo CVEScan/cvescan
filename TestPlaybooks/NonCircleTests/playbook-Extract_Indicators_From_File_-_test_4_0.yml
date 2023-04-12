@@ -60,7 +60,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/textwithindicators.txt
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/textwithindicators.txt
       username: {}
     reputationcalc: 1
     separatecontext: false
@@ -233,7 +233,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/docwithindicators.doc
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/docwithindicators.doc
       username: {}
     reputationcalc: 1
     separatecontext: false
@@ -275,7 +275,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/docxwithindicators.docx
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/docxwithindicators.docx
       username: {}
     reputationcalc: 1
     separatecontext: false
@@ -317,7 +317,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/pdfwithindicators.pdf
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/pdfwithindicators.pdf
       username: {}
     reputationcalc: 1
     separatecontext: false

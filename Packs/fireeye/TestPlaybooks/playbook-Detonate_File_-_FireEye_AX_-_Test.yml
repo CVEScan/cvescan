@@ -92,7 +92,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/pdfworking.pdf
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/pdfworking.pdf
       username: {}
     separatecontext: false
     view: |-
@@ -189,7 +189,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/IndicatorsList.txt
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/IndicatorsList.txt
       username: {}
     separatecontext: false
     view: |-

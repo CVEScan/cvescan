@@ -57,7 +57,7 @@ Assume the following:
 ```
 
 2. Grid: \
-![Grid](https://github.com/demisto/content/raw/4510eafaf6cfeb48a42d9032dd0e71200b288ad5/Packs/Legacy/Scripts/SetGridField/doc_files/grid.png)
+![Grid](https://github.com/cvescan/cvescan/raw/4510eafaf6cfeb48a42d9032dd0e71200b288ad5/Packs/Legacy/Scripts/SetGridField/doc_files/grid.png)
 
 Considering the following cases:
 1. Key value to Grid:
@@ -67,7 +67,7 @@ keys="Received,Thread-Index,X-MS-Exchange-Organization-AuthSource,Accept-Languag
 ```
 
 Grid after update: \
-![Grid](https://github.com/demisto/content/raw/4510eafaf6cfeb48a42d9032dd0e71200b288ad5/Packs/Legacy/Scripts/SetGridField/doc_files/grid_key_value_update.png)
+![Grid](https://github.com/cvescan/cvescan/raw/4510eafaf6cfeb48a42d9032dd0e71200b288ad5/Packs/Legacy/Scripts/SetGridField/doc_files/grid_key_value_update.png)
  
 2. List of item properties to Grid:
 ```shell script
@@ -76,7 +76,7 @@ keys="name, value"
 ```
 
 Grid after update: \
-![Grid](https://github.com/demisto/content/raw/4510eafaf6cfeb48a42d9032dd0e71200b288ad5/Packs/Legacy/Scripts/SetGridField/doc_files/grid_list_update.png) 
+![Grid](https://github.com/cvescan/cvescan/raw/4510eafaf6cfeb48a42d9032dd0e71200b288ad5/Packs/Legacy/Scripts/SetGridField/doc_files/grid_list_update.png) 
 
 ## Troubleshooting
 

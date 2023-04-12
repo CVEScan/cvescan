@@ -85,7 +85,7 @@ Converts the contents of a URL to an image file or a PDF file.
 ```
 
 #### Human Readable Output
-[!image](https://raw.githubusercontent.com/demisto/content/6bdd1b0ca11b977db6d1c652063b71b8697794c2/Packs/rasterize/Integrations/rasterize/doc_files/rasterize_url_command_output.png)
+[!image](https://raw.githubusercontent.com/cvescan/cvescan/6bdd1b0ca11b977db6d1c652063b71b8697794c2/Packs/rasterize/Integrations/rasterize/doc_files/rasterize_url_command_output.png)
 
 
 ### rasterize-email
@@ -140,7 +140,7 @@ Converts the body of an email to an image file or a PDF file.
 
 #### Human Readable Output
 
-[!image](https://raw.githubusercontent.com/demisto/content/6bdd1b0ca11b977db6d1c652063b71b8697794c2/Packs/rasterize/Integrations/rasterize/doc_files/rasterize_email_command_output.png)
+[!image](https://raw.githubusercontent.com/cvescan/cvescan/6bdd1b0ca11b977db6d1c652063b71b8697794c2/Packs/rasterize/Integrations/rasterize/doc_files/rasterize_email_command_output.png)
 
 
 ### rasterize-image

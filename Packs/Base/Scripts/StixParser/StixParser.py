@@ -22,7 +22,7 @@ TAXII_VER_2_1 = "2.1"
 DFLT_LIMIT_PER_REQUEST = 100
 API_USERNAME = "_api_token_key"
 HEADER_USERNAME = "_header:"
-XSOAR_TAXII2_SERVER_SCHEMA = "https://github.com/demisto/content/blob/4265bd5c71913cd9d9ed47d9c37d0d4d3141c3eb/" \
+XSOAR_TAXII2_SERVER_SCHEMA = "https://github.com/cvescan/cvescan/blob/4265bd5c71913cd9d9ed47d9c37d0d4d3141c3eb/" \
                              "Packs/TAXIIServer/doc_files/XSOAR_indicator_schema.json"
 SYSTEM_FIELDS = ['id', 'version', 'modified', 'sortValues', 'timestamp', 'indicator_type',
                  'value', 'sourceInstances', 'sourceBrands', 'investigationIDs', 'lastSeen', 'firstSeen',

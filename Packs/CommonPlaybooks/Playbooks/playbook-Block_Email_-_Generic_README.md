@@ -31,4 +31,4 @@ There are no outputs for this playbook.
 
 ## Playbook Image
 ---
-![Block Email - Generic](https://raw.githubusercontent.com/demisto/content/605f19009e479d6665e545748a777e23b9ec5365/Packs/CommonPlaybooks/doc_files/Block_Email_-_Generic.png)
+![Block Email - Generic](https://raw.githubusercontent.com/cvescan/cvescan/605f19009e479d6665e545748a777e23b9ec5365/Packs/CommonPlaybooks/doc_files/Block_Email_-_Generic.png)

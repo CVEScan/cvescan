@@ -8,7 +8,7 @@ permissions:
 jobs:
   manage_project_board:
     runs-on: ubuntu-latest
-    if: github.repository == 'demisto/content'
+    if: github.repository == 'cvescan/cvescan'
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.7

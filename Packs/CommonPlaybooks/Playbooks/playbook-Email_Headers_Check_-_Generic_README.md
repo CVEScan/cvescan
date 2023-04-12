@@ -36,4 +36,4 @@ setIncident
 
 ## Playbook Image
 ---
-![Email Headers Check - Generic](https://raw.githubusercontent.com/demisto/content/5153dd815b5288877b560e3fdcc3d9ab28cda57e/Packs/CommonPlaybooks/doc_files/Email_Headers_Check_-_Generic.png)
+![Email Headers Check - Generic](https://raw.githubusercontent.com/cvescan/cvescan/5153dd815b5288877b560e3fdcc3d9ab28cda57e/Packs/CommonPlaybooks/doc_files/Email_Headers_Check_-_Generic.png)

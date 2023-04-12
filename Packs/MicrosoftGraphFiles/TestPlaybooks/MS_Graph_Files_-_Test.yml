@@ -1799,7 +1799,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://github.com/demisto/content/raw/master/TestData/jpg_with_pdf_extension.pdf
+        simple: https://github.com/cvescan/cvescan/raw/master/TestData/jpg_with_pdf_extension.pdf
     separatecontext: false
     continueonerrortype: ""
     view: |-
@@ -2155,7 +2155,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://github.com/demisto/content/raw/master/TestData/TestImage.jpg.tar
+        simple: https://github.com/cvescan/cvescan/raw/master/TestData/TestImage.jpg.tar
     separatecontext: false
     continueonerrortype: ""
     view: |-

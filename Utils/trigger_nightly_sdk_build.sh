@@ -62,7 +62,7 @@ if [ -n "$_gitlab" ]; then
     "$BUILD_TRIGGER_URL"
 
 else
-  trigger_build_url="https://circleci.com/api/v2/project/github/demisto/content/pipeline"
+  trigger_build_url="https://circleci.com/api/v2/project/github/cvescan/cvescan/pipeline"
 
   post_data=$(cat <<-EOF
   {

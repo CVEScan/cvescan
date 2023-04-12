@@ -9,9 +9,9 @@ github_response_1 = [
         "additions": 1,
         "deletions": 0,
         "changes": 1,
-        "blob_url": "https://github.com/demisto/content/blob/1/Packs/Slack/Integrations/Slack/README.md",
-        "raw_url": "https://github.com/demisto/content/raw/1/Packs/Slack/Integrations/Slack/README.md",
-        "contents_url": "https://api.github.com/repos/demisto/content",
+        "blob_url": "https://github.com/cvescan/cvescan/blob/1/Packs/Slack/Integrations/Slack/README.md",
+        "raw_url": "https://github.com/cvescan/cvescan/raw/1/Packs/Slack/Integrations/Slack/README.md",
+        "contents_url": "https://api.github.com/repos/cvescan/cvescan",
         "patch": "@@ -1,4 +1,5 @@\n <p>\n+  shtak\n   Send messages and notifications to your Slack Team.\n"
     },
     {
@@ -21,9 +21,9 @@ github_response_1 = [
         "additions": 2,
         "deletions": 2,
         "changes": 4,
-        "blob_url": "https://github.com/demisto/content/blob/1/Packs/Slack/pack_metadata.json",
-        "raw_url": "https://github.com/demisto/content/raw/1/Packs/Slack/pack_metadata.json",
-        "contents_url": "https://api.github.com/repos/demisto/content/contents",
+        "blob_url": "https://github.com/cvescan/cvescan/blob/1/Packs/Slack/pack_metadata.json",
+        "raw_url": "https://github.com/cvescan/cvescan/raw/1/Packs/Slack/pack_metadata.json",
+        "contents_url": "https://api.github.com/repos/cvescan/cvescan/contents",
         "patch": "@@ -13,7 +13,7 @@\n     \"tags\": [],\n     \"useCases\": []"
     }
 ]
@@ -36,9 +36,9 @@ github_response_2 = [
         "additions": 1,
         "deletions": 0,
         "changes": 1,
-        "blob_url": "https://github.com/demisto/content/blob/1/Packs/Slack/Integrations/Slack/README.md",
-        "raw_url": "https://github.com/demisto/content/raw/1/Packs/Slack/Integrations/Slack/README.md",
-        "contents_url": "https://api.github.com/repos/demisto/content",
+        "blob_url": "https://github.com/cvescan/cvescan/blob/1/Packs/Slack/Integrations/Slack/README.md",
+        "raw_url": "https://github.com/cvescan/cvescan/raw/1/Packs/Slack/Integrations/Slack/README.md",
+        "contents_url": "https://api.github.com/repos/cvescan/cvescan",
         "patch": "@@ -1,4 +1,5 @@\n <p>\n+  shtak\n   Send messages and notifications to your Slack Team.\n"
     },
     {
@@ -48,9 +48,9 @@ github_response_2 = [
         "additions": 2,
         "deletions": 2,
         "changes": 4,
-        "blob_url": "https://github.com/demisto/content/blob/1/Packs/Slack/pack_metadata.json",
-        "raw_url": "https://github.com/demisto/content/raw/1/Packs/Slack/pack_metadata.json",
-        "contents_url": "https://api.github.com/repos/demisto/content/contents",
+        "blob_url": "https://github.com/cvescan/cvescan/blob/1/Packs/Slack/pack_metadata.json",
+        "raw_url": "https://github.com/cvescan/cvescan/raw/1/Packs/Slack/pack_metadata.json",
+        "contents_url": "https://api.github.com/repos/cvescan/cvescan/contents",
         "patch": "@@ -13,7 +13,7 @@\n     \"tags\": [],\n     \"useCases\": []"
     }
 ]
@@ -63,9 +63,9 @@ github_response_3 = [
         "additions": 1,
         "deletions": 0,
         "changes": 1,
-        "blob_url": "https://github.com/demisto/content/blob/1/Packs/Slack1/Integrations/Slack/README.md",
-        "raw_url": "https://github.com/demisto/content/raw/1/Packs/Slack1/Integrations/Slack/README.md",
-        "contents_url": "https://api.github.com/repos/demisto/content",
+        "blob_url": "https://github.com/cvescan/cvescan/blob/1/Packs/Slack1/Integrations/Slack/README.md",
+        "raw_url": "https://github.com/cvescan/cvescan/raw/1/Packs/Slack1/Integrations/Slack/README.md",
+        "contents_url": "https://api.github.com/repos/cvescan/cvescan",
         "patch": "@@ -1,4 +1,5 @@\n <p>\n+  shtak\n   Send messages and notifications to your Slack Team.\n"
     },
     {
@@ -75,9 +75,9 @@ github_response_3 = [
         "additions": 2,
         "deletions": 2,
         "changes": 4,
-        "blob_url": "https://github.com/demisto/content/blob/1/Packs/Slack1/pack_metadata.json",
-        "raw_url": "https://github.com/demisto/content/raw/1/Packs/Slack1/pack_metadata.json",
-        "contents_url": "https://api.github.com/repos/demisto/content/contents",
+        "blob_url": "https://github.com/cvescan/cvescan/blob/1/Packs/Slack1/pack_metadata.json",
+        "raw_url": "https://github.com/cvescan/cvescan/raw/1/Packs/Slack1/pack_metadata.json",
+        "contents_url": "https://api.github.com/repos/cvescan/cvescan/contents",
         "patch": "@@ -13,7 +13,7 @@\n     \"tags\": [],\n     \"useCases\": []"
     }
 ]
@@ -105,7 +105,7 @@ def test_get_pr_files(requests_mock):
     """
     pr_number = '1'
     requests_mock.get(
-        'https://api.github.com/repos/demisto/content/pulls/1/files',
+        'https://api.github.com/repos/cvescan/cvescan/pulls/1/files',
         [{'json': github_response_1, 'status_code': 200},
          {'json': github_response_2, 'status_code': 200},
          {'json': github_response_4, 'status_code': 200}]
@@ -132,7 +132,7 @@ def test_get_multiple_pr_files(requests_mock):
     """
     pr_number = '1'
     requests_mock.get(
-        'https://api.github.com/repos/demisto/content/pulls/1/files',
+        'https://api.github.com/repos/cvescan/cvescan/pulls/1/files',
         [{'json': github_response_1, 'status_code': 200},
          {'json': github_response_2, 'status_code': 200},
          {'json': github_response_3, 'status_code': 200},
@@ -161,7 +161,7 @@ def test_get_pr_files_no_pack(requests_mock):
     pr_number = '1'
 
     requests_mock.get(
-        'https://api.github.com/repos/demisto/content/pulls/1/files',
+        'https://api.github.com/repos/cvescan/cvescan/pulls/1/files',
         [{'json': github_response_1, 'status_code': 200},
          {'json': github_response_4, 'status_code': 200}]
     )

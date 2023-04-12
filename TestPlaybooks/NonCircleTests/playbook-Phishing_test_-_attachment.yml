@@ -177,7 +177,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/attachment_malicious_url.eml
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/attachment_malicious_url.eml
       username: {}
     separatecontext: false
     view: |-

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://github.com/demisto/content/tree/master/Packs/TAXIIServer/doc_files/XSOAR_indicator_schema.json",
+	"$id": "https://github.com/cvescan/cvescan/tree/master/Packs/TAXIIServer/doc_files/XSOAR_indicator_schema.json",
 	"title": "XSOAR Indicator",
 	"description": "Raw export of an XSOAR indicator",
 	"type": "object",

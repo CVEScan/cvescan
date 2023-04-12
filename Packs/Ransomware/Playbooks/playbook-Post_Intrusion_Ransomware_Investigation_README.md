@@ -61,4 +61,4 @@ There are no outputs for this playbook.
 
 ## Playbook Image
 ---
-![Post Intrusion Ransomware Investigation](https://raw.githubusercontent.com/demisto/content/46d29932562518dcbb7be50ef75d5af45a82beb9/Packs/Ransomware/doc_files/Post_Intrusion_Ransomware_Investigation.png)
+![Post Intrusion Ransomware Investigation](https://raw.githubusercontent.com/cvescan/cvescan/46d29932562518dcbb7be50ef75d5af45a82beb9/Packs/Ransomware/doc_files/Post_Intrusion_Ransomware_Investigation.png)

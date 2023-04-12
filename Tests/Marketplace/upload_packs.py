@@ -819,7 +819,7 @@ def add_pr_comment(comment: str):
     branch_name = os.environ['CI_COMMIT_BRANCH']
     sha1 = os.environ['CI_COMMIT_SHA']
 
-    query = f'?q={sha1}+repo:demisto/content+is:pr+is:open+head:{branch_name}+is:open'
+    query = f'?q={sha1}+repo:cvescan/cvescan+is:pr+is:open+head:{branch_name}+is:open'
     url = 'https://api.github.com/search/issues'
     headers = {'Authorization': 'Bearer ' + token}
     try:

@@ -449,7 +449,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://github.com/demisto/content/raw/master/TestData/pdfworking.pdf
+        simple: https://github.com/cvescan/cvescan/raw/master/TestData/pdfworking.pdf
     separatecontext: false
     view: |-
       {

@@ -61,4 +61,4 @@ There are no outputs for this playbook.
 
 ## Playbook Image
 ---
-![Playbook Image](https://github.com/demisto/content/raw/5e428e8319dc849cefd284e8a25ccd7b527604a1/Packs/PortScan/doc_files/Port_Scan_-_Generic.png)
+![Playbook Image](https://github.com/cvescan/cvescan/raw/5e428e8319dc849cefd284e8a25ccd7b527604a1/Packs/PortScan/doc_files/Port_Scan_-_Generic.png)

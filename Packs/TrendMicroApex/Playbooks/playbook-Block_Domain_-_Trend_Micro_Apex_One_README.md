@@ -29,4 +29,4 @@ There are no outputs for this playbook.
 
 ## Playbook Image
 ---
-![Block Domain - Trend Micro Apex One](https://raw.githubusercontent.com/demisto/content/7d20d193ddfe06ad3ead0effb87db3e71fe675a8/Packs/TrendMicroApex/doc_files/Block_Domain_-_Trend_Micro_Apex_One.png)
+![Block Domain - Trend Micro Apex One](https://raw.githubusercontent.com/cvescan/cvescan/7d20d193ddfe06ad3ead0effb87db3e71fe675a8/Packs/TrendMicroApex/doc_files/Block_Domain_-_Trend_Micro_Apex_One.png)

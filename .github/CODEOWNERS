@@ -1,10 +1,10 @@
 # Marketplace Related - Marketplace PMs only
-/Tests/Marketplace/approved_tags.json @yaakovpraisler @bakatzir @GuyLibermanPA @demisto/content-leaders
-/Tests/Marketplace/approved_usecases.json @yaakovpraisler @bakatzir @GuyLibermanPA @demisto/content-leaders
-/Tests/Marketplace/landingPage_sections.json @yaakovpraisler @bakatzir @GuyLibermanPA @demisto/content-leaders
-/Tests/Marketplace/approved_categories.json @yaakovpraisler @bakatzir @GuyLibermanPA @demisto/content-leaders
-/Tests/Marketplace/core_packs_list.json @yaakovpraisler @bakatzir @GuyLibermanPA @demisto/content-leaders
-/Tests/Marketplace/core_packs_mpv2_list.json @yaakovpraisler @bakatzir @GuyLibermanPA @demisto/content-leaders
+/Tests/Marketplace/approved_tags.json @yaakovpraisler @bakatzir @GuyLibermanPA @cvescan/cvescan-leaders
+/Tests/Marketplace/approved_usecases.json @yaakovpraisler @bakatzir @GuyLibermanPA @cvescan/cvescan-leaders
+/Tests/Marketplace/landingPage_sections.json @yaakovpraisler @bakatzir @GuyLibermanPA @cvescan/cvescan-leaders
+/Tests/Marketplace/approved_categories.json @yaakovpraisler @bakatzir @GuyLibermanPA @cvescan/cvescan-leaders
+/Tests/Marketplace/core_packs_list.json @yaakovpraisler @bakatzir @GuyLibermanPA @cvescan/cvescan-leaders
+/Tests/Marketplace/core_packs_mpv2_list.json @yaakovpraisler @bakatzir @GuyLibermanPA @cvescan/cvescan-leaders
 
 # Docker native image
 /Tests/docker_native_image_config.json @GuyAfik @JudahSchwartz
@@ -40,20 +40,20 @@
 /Packs/PrismaSaasSecurity/Integrations/ @yaakovpraisler
 
 # Important Integrations
-/Packs/Jira/Integrations/JiraV2/* @demisto/content-leaders
-/Packs/ServiceNow/Integrations/ServiceNowv2/* @demisto/content-leaders @Shellyber
-/Packs/EWS/Integrations/EWSv2/* @demisto/content-leaders
-/Packs/ArcSightESM/Integrations/ArcSightESMv2/* @demisto/content-leaders
+/Packs/Jira/Integrations/JiraV2/* @cvescan/cvescan-leaders
+/Packs/ServiceNow/Integrations/ServiceNowv2/* @cvescan/cvescan-leaders @Shellyber
+/Packs/EWS/Integrations/EWSv2/* @cvescan/cvescan-leaders
+/Packs/ArcSightESM/Integrations/ArcSightESMv2/* @cvescan/cvescan-leaders
 /Packs/QRadar/Integrations/QRadar_v3/* @tkatzir
-/Packs/Slack/Integrations/Slack/* @demisto/content-leaders
-/Packs/SplunkPy/Integrations/SplunkPy/* @demisto/content-leaders
-/Packs/Active_Directory_Query/Integrations/Active_Directory_Query/* @demisto/content-leaders
-/Packs/VirusTotal/Integrations/integration-VirusTotal_5.5.yml @demisto/content-leaders
+/Packs/Slack/Integrations/Slack/* @cvescan/cvescan-leaders
+/Packs/SplunkPy/Integrations/SplunkPy/* @cvescan/cvescan-leaders
+/Packs/Active_Directory_Query/Integrations/Active_Directory_Query/* @cvescan/cvescan-leaders
+/Packs/VirusTotal/Integrations/integration-VirusTotal_5.5.yml @cvescan/cvescan-leaders
 /Packs/ContentManagement/* @adi88d
 
 # Important Scripts
 /Packs/CommonScripts/Scripts/SetGridField/* @altmannyarden
-/Packs/CommonScripts/Scripts/SearchIncidentsV2/* @demisto/content-leaders
+/Packs/CommonScripts/Scripts/SearchIncidentsV2/* @cvescan/cvescan-leaders
 /Packs/CommonScripts/Scripts/ParseEmailFiles/* @moishce
 
 # Common Packs

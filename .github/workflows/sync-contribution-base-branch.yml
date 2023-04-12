@@ -10,7 +10,7 @@ permissions:
 jobs:
   sync_contributor_base_branch:
     runs-on: ubuntu-latest
-    if: github.repository == 'demisto/content'
+    if: github.repository == 'cvescan/cvescan'
     steps:
       - name: Checkout
         uses: actions/checkout@v3

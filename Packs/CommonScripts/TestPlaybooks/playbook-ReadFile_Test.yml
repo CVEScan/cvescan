@@ -56,7 +56,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/hebrew_file.txt
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/hebrew_file.txt
       username: {}
     separatecontext: false
     view: |-
@@ -160,7 +160,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/file_with_escape_chars.txt
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/file_with_escape_chars.txt
       username: {}
     separatecontext: false
     view: |-
@@ -202,7 +202,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/regular_english_file.txt
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/regular_english_file.txt
       username: {}
     separatecontext: false
     view: |-

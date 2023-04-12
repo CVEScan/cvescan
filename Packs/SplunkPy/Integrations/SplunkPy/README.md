@@ -101,24 +101,24 @@ You can use Splunk to define a user lookup table and then configure the SplunkPy
 1. Define the lookup table in Splunk.  
    1. Under **App: Lookup Editor**, select **Lookup Editor**.  
 
-      ![image](https://raw.githubusercontent.com/demisto/content-docs/091b2154a54c6208428b84f2969836c71a36bafe/docs/doc_imgs/integrations/splunk-lookup-editor.png)  
+      ![image](https://raw.githubusercontent.com/cvescan/cvescan-docs/091b2154a54c6208428b84f2969836c71a36bafe/docs/doc_imgs/integrations/splunk-lookup-editor.png)  
 
    2. Select **Create a New Lookup** > **KV Store lookup**.  
 
-      ![image](https://raw.githubusercontent.com/demisto/content-docs/5d64d0aa825b56327759c5c6ec1b81b1d9dcf493/docs/doc_imgs/integrations/kv-store-lookup.png)  
+      ![image](https://raw.githubusercontent.com/cvescan/cvescan-docs/5d64d0aa825b56327759c5c6ec1b81b1d9dcf493/docs/doc_imgs/integrations/kv-store-lookup.png)  
 
    3. Enter the **Name** for the table. For example, **splunk_xsoar_users** is the default lookup table name defined in the SplunkPy integration settings.
    4. Under **App**, select **Enterprise Security**.
    5. Assign two **Key-value collection schema** fields, one for the Cortex XSOAR usernames and one for the corresponding Splunk usernames. For example, **xsoar_user** and **splunk_user** are the default field values defined in the SplunkPy integration settings.
    6. Click **Create Lookup**. 
 
-      ![image](https://raw.githubusercontent.com/demisto/content-docs/ab6faddf6146cab19d13a8f3211b49ba70b166a7/docs/doc_imgs/integrations/new-lookup-table.png) 
+      ![image](https://raw.githubusercontent.com/cvescan/cvescan-docs/ab6faddf6146cab19d13a8f3211b49ba70b166a7/docs/doc_imgs/integrations/new-lookup-table.png) 
        
      **Note:**  
     If the user keys are defined already in another table, you can use that table name and relevant key names in the SplunkPy integration settings.
     7. Add values to the table to map Cortex XSOAR users to the Splunk users.  
 
-      ![image](https://raw.githubusercontent.com/demisto/content-docs/79c67e22ea19619f3278b2956eb41375c4d77f3f/docs/doc_imgs/integrations/add-values-to-lookup-table.png)
+      ![image](https://raw.githubusercontent.com/cvescan/cvescan-docs/79c67e22ea19619f3278b2956eb41375c4d77f3f/docs/doc_imgs/integrations/add-values-to-lookup-table.png)
 2. Configure the Splunk integration instance.  
 Define the lookup table in Splunk.  
    1. Under **Settings** > **Integrations**, search for the SplunkPy integration and create an instance.
@@ -128,7 +128,7 @@ Define the lookup table in Splunk.
        3. Set the **XSOAR user key**  to the field defined in the Splunk lookup table. By default it is **xsoar_user**.
        4. Set the **SPLUNK user key** to the field defined in the Splunk lookup table. By default it is **splunk_user**. 
 
-          ![image](https://raw.githubusercontent.com/demisto/content-docs/9a41b8c19df9d5fd8120471bfde111de31caf033/docs/doc_imgs/integrations/user-mapping-settings-configuration.png)
+          ![image](https://raw.githubusercontent.com/cvescan/cvescan-docs/9a41b8c19df9d5fd8120471bfde111de31caf033/docs/doc_imgs/integrations/user-mapping-settings-configuration.png)
    
 
 #### Troubleshooting enrichment status

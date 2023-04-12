@@ -24,7 +24,7 @@
 <ul>
 <li>Cortex XSOAR Engine must be installed on a target window machine which is part of the domain of your Exchange 2016 server.</li>
 <li>Make sure you have Python 2.7 installed on the Engine machine.</li>
-<li>Add the necessary Python lbs to the Engine machine.<br> <a href="https://github.com/demisto/content/blob/master/Packs/Exchange2016_Compliance/Integrations/Exchange2016_Compliance/doc_files/requirements.txt">https://github.com/demisto/content/blob/master/Packs/Exchange2016_Compliance/Integrations/Exchange2016_Compliance/doc_files/requirements.txt</a><br> Run the pip install --no-cache-dir -r requirements.txt command.</li>
+<li>Add the necessary Python lbs to the Engine machine.<br> <a href="https://github.com/cvescan/cvescan/blob/master/Packs/Exchange2016_Compliance/Integrations/Exchange2016_Compliance/doc_files/requirements.txt">https://github.com/cvescan/cvescan/blob/master/Packs/Exchange2016_Compliance/Integrations/Exchange2016_Compliance/doc_files/requirements.txt</a><br> Run the pip install --no-cache-dir -r requirements.txt command.</li>
 <li>Make sure the integration runs without docker image.</li>
 <li>For more information regarding Installing and Deploying Cortex XSOAR Engines, see the <a href="https://docs-cortex.paloaltonetworks.com/r/Cortex-XSOAR/6.10/Cortex-XSOAR-Administrator-Guide/Install-a-Cortex-XSOAR-Engine">Cortex XSOAR Engines Documentation</a>.</li>
 </ul>

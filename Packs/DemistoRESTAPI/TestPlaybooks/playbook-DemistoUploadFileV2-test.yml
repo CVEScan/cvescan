@@ -57,7 +57,7 @@ tasks:
       unsecure:
         simple: "true"
       url:
-        simple: https://github.com/demisto/content/raw/master/xsoar_content_logo.png
+        simple: https://github.com/cvescan/cvescan/raw/master/xsoar_content_logo.png
     separatecontext: false
     view: |-
       {

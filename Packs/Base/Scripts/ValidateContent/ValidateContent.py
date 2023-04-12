@@ -302,46 +302,46 @@ def get_content_modules(content_tmp_dir: str, verify_ssl: bool = True) -> None:
     modules = [
         {
             'file': 'CommonServerPython.py',
-            'github_url': 'https://raw.githubusercontent.com/demisto/content/master/Packs/Base/Scripts'
+            'github_url': 'https://raw.githubusercontent.com/cvescan/cvescan/master/Packs/Base/Scripts'
                           '/CommonServerPython/CommonServerPython.py',
             'content_path': 'Packs/Base/Scripts/CommonServerPython',
         },
         {
             'file': 'CommonServerPowerShell.ps1',
-            'github_url': 'https://raw.githubusercontent.com/demisto/content/master/Packs/Base/Scripts'
+            'github_url': 'https://raw.githubusercontent.com/cvescan/cvescan/master/Packs/Base/Scripts'
                           '/CommonServerPowerShell/CommonServerPowerShell.ps1',
             'content_path': 'Packs/Base/Scripts/CommonServerPowerShell',
         },
         {
             'file': 'demistomock.py',
-            'github_url': 'https://raw.githubusercontent.com/demisto/content/master/Tests/demistomock/demistomock.py',
+            'github_url': 'https://raw.githubusercontent.com/cvescan/cvescan/master/Tests/demistomock/demistomock.py',
             'content_path': 'Tests/demistomock',
         },
         {
             'file': 'demistomock.ps1',
-            'github_url': 'https://raw.githubusercontent.com/demisto/content/master/Tests/demistomock/demistomock.ps1',
+            'github_url': 'https://raw.githubusercontent.com/cvescan/cvescan/master/Tests/demistomock/demistomock.ps1',
             'content_path': 'Tests/demistomock',
         },
         {
             'file': 'tox.ini',
-            'github_url': 'https://raw.githubusercontent.com/demisto/content/master/tox.ini',
+            'github_url': 'https://raw.githubusercontent.com/cvescan/cvescan/master/tox.ini',
             'content_path': '.'
         },
         {
             'file': 'conftest.py',
-            'github_url': 'https://raw.githubusercontent.com/demisto/content/master/Tests/scripts/dev_envs/pytest'
+            'github_url': 'https://raw.githubusercontent.com/cvescan/cvescan/master/Tests/scripts/dev_envs/pytest'
                           '/conftest.py',
             'content_path': 'Tests/scripts/dev_envs/pytest'
         },
         {
             'file': 'approved_usecases.json',
-            'github_url': 'https://raw.githubusercontent.com/demisto/content/master/'
+            'github_url': 'https://raw.githubusercontent.com/cvescan/cvescan/master/'
                           'Tests/Marketplace/approved_usecases.json',
             'content_path': 'Tests/Marketplace',
         },
         {
             'file': 'approved_tags.json',
-            'github_url': 'https://raw.githubusercontent.com/demisto/content/master/'
+            'github_url': 'https://raw.githubusercontent.com/cvescan/cvescan/master/'
                           'Tests/Marketplace/approved_tags.json',
             'content_path': 'Tests/Marketplace',
         },
@@ -398,7 +398,7 @@ def main():
         verify_ssl = argToBoolean(args.get('trust_any_certificate'))
 
         content_repo = git.Repo.init(content_tmp_dir.name)
-        content_repo.create_remote('origin', 'https://github.com/demisto/content.git')
+        content_repo.create_remote('origin', 'https://github.com/cvescan/cvescan.git')
         os.makedirs(CACHED_MODULES_DIR, exist_ok=True)
 
         get_content_modules(content_tmp_dir.name, verify_ssl)

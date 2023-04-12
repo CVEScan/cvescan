@@ -33,4 +33,4 @@ There are no outputs for this playbook.
 
 ## Playbook Image
 ---
-![PrismaCloudRemediation_AWSInactiveUsersForMoreThan30Days](https://raw.githubusercontent.com/demisto/content/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/PrismaCloudRemediation_AWSInactiveUsersForMoreThan30Days.png) 
+![PrismaCloudRemediation_AWSInactiveUsersForMoreThan30Days](https://raw.githubusercontent.com/cvescan/cvescan/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/PrismaCloudRemediation_AWSInactiveUsersForMoreThan30Days.png) 

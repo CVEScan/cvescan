@@ -318,8 +318,8 @@ There is no context output for this command.
 
 ## Demo Video
 <video controls>
-    <source src="https://github.com/demisto/content-assets/raw/58ada3506ba4082dc5aa36044f02bc212af73f96/Assets/CentrifyVault/CentrifyVault_demo.mp4"
+    <source src="https://github.com/cvescan/cvescan-assets/raw/58ada3506ba4082dc5aa36044f02bc212af73f96/Assets/CentrifyVault/CentrifyVault_demo.mp4"
             type="video/mp4"/>
-    Sorry, your browser doesn't support embedded videos. You can download the video at: https://github.com/demisto/content-assets/blob/58ada3506ba4082dc5aa36044f02bc212af73f96/Assets/CentrifyVault/CentrifyVault_demo.mp4
+    Sorry, your browser doesn't support embedded videos. You can download the video at: https://github.com/cvescan/cvescan-assets/blob/58ada3506ba4082dc5aa36044f02bc212af73f96/Assets/CentrifyVault/CentrifyVault_demo.mp4
 </video>
 

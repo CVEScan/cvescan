@@ -24,9 +24,9 @@ You need to do the following in Google before configuring the integration in Cor
 8.  Select Key type **JSON** and click **CREATE**.
 9.  Click **DONE**.<br/>A Service Account file with a key pair is generated and automatically downloads.
 10.  In the **Actions** column, select the service and then click **edit**.
-    ![mceclip1.png](https://github.com/demisto/content/raw/6d9ac954729a6dffd6be51b658e7987824238462/Integrations/Gmail/doc_imgs/mceclip1.png) 
+    ![mceclip1.png](https://github.com/cvescan/cvescan/raw/6d9ac954729a6dffd6be51b658e7987824238462/Integrations/Gmail/doc_imgs/mceclip1.png) 
 11.  Under the show domain wide delegation, select **Enable G Suite Domain-wide Delegation**.
-    ![gmail-_enable.png](https://github.com/demisto/content/raw/6d9ac954729a6dffd6be51b658e7987824238462/Integrations/Gmail/doc_imgs/gmail-enable.png)  
+    ![gmail-_enable.png](https://github.com/cvescan/cvescan/raw/6d9ac954729a6dffd6be51b658e7987824238462/Integrations/Gmail/doc_imgs/gmail-enable.png)  
     NOTE: Copy the value of the Unique ID for the client name in step 2 in Delegate Domain-wide Authority to Your Service Account. 
 12.  Click Save.
 13.  In the top search bar, search for _admin sdk_.
@@ -49,7 +49,7 @@ In order to revoke/fetch a user role, you need an Immutable Google Apps ID param
    The SSO URL is the Immutable Google Apps ID.
 3. Record the SSO URL, which is the Immutable Google Apps ID, and copy it for later use.
 
-![Setup Account](https://github.com/demisto/content/raw/6d9ac954729a6dffd6be51b658e7987824238462/Integrations/Gmail/doc_imgs/mceclip2.png)
+![Setup Account](https://github.com/cvescan/cvescan/raw/6d9ac954729a6dffd6be51b658e7987824238462/Integrations/Gmail/doc_imgs/mceclip2.png)
 
 ## Required Scopes
 | Function | API to Authorize |

@@ -50,4 +50,4 @@ This playbook does not use any scripts.
 ## Playbook Image
 
 ---
-![Code42 Exfiltration Playbook](https://raw.githubusercontent.com/demisto/content/dd418027433970a18ce06ebef97933c70a92a940/Packs/Code42/doc_files/Code42_File_Download.png)
+![Code42 Exfiltration Playbook](https://raw.githubusercontent.com/cvescan/cvescan/dd418027433970a18ce06ebef97933c70a92a940/Packs/Code42/doc_files/Code42_File_Download.png)

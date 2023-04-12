@@ -17,7 +17,7 @@ if [ -z "$CI_COMMIT_BRANCH" ]; then
     DIFF_COMPARE=origin/master
 elif [ "$CI_COMMIT_BRANCH" == "master" ]; then
     # on master we use the range obtained from CIRCLE_COMPARE_URL
-    # example of comapre url: https://github.com/demisto/content/compare/62f0bd03be73...1451bf0f3c2a
+    # example of comapre url: https://github.com/cvescan/cvescan/compare/62f0bd03be73...1451bf0f3c2a
     # if CIRCLE_COMPARE_URL is not set we use last commit
     if [ -z "$CIRCLE_COMPARE_URL" ]; then
         DIFF_COMPARE="HEAD^1...HEAD"

@@ -2624,7 +2624,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://github.com/demisto/content/blob/master/TestData/regular_english_file.txt
+        simple: https://github.com/cvescan/cvescan/blob/master/TestData/regular_english_file.txt
     separatecontext: false
     view: |-
       {
@@ -3137,7 +3137,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/CheckEmailAuthenticity_test_mail.eml
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/CheckEmailAuthenticity_test_mail.eml
     separatecontext: false
     view: |-
       {

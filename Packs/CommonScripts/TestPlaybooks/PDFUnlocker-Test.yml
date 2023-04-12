@@ -90,7 +90,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://github.com/demisto/content/raw/master/TestData/sample-test.pdf
+        simple: https://github.com/cvescan/cvescan/raw/master/TestData/sample-test.pdf
     separatecontext: false
     view: |-
       {

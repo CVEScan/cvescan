@@ -28,4 +28,4 @@ There are no outputs for this playbook.
 
 ## Playbook Image
 ---
-![PaloAltoNetworks_Cortex_XDR_Incident_Sync](https://raw.githubusercontent.com/demisto/content/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/Cortex_XDR_Incident_Sync.png)
+![PaloAltoNetworks_Cortex_XDR_Incident_Sync](https://raw.githubusercontent.com/cvescan/cvescan/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/Cortex_XDR_Incident_Sync.png)

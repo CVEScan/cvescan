@@ -522,7 +522,7 @@ def main():
     demisto.results(fileResult(filename, docs, file_type=entryTypes['entryInfoFile']))
     if errors:
         errors.append('Visit the documentation page for more details: '
-                      'https://github.com/demisto/content/tree/master/docs/integration_documentation')
+                      'https://github.com/cvescan/cvescan/tree/master/docs/integration_documentation')
         return_error('\n'.join('* {}'.format(e) for e in errors))
 
 

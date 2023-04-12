@@ -57,7 +57,7 @@ tasks:
       saveAsFile:
         simple: yes
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/valid_email-rasterize.eml
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/valid_email-rasterize.eml
     separatecontext: false
     view: |-
       {
@@ -196,7 +196,7 @@ tasks:
       saveAsFile:
         simple: yes
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/corrupt_email-rasterize.eml
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/corrupt_email-rasterize.eml
     separatecontext: false
     view: |-
       {
@@ -267,7 +267,7 @@ tasks:
       saveAsFile:
         simple: yes
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/test_image.png
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/test_image.png
     separatecontext: false
     view: |-
       {

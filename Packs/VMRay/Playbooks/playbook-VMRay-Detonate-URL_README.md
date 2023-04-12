@@ -98,4 +98,4 @@ This playbook does not use any scripts.
 
 ## Playbook Image
 ---
-![Detonate URL - VMRay](https://raw.githubusercontent.com/demisto/content/b775f79abb03fef141bd8581cc3ada4f0771e71a/docs/images/playbooks/VMRay-Detonate-URL.png)
+![Detonate URL - VMRay](https://raw.githubusercontent.com/cvescan/cvescan/b775f79abb03fef141bd8581cc3ada4f0771e71a/docs/images/playbooks/VMRay-Detonate-URL.png)

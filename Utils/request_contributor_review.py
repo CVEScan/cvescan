@@ -84,7 +84,7 @@ def tag_user_on_pr(reviewers: set, pr_number: str, pack: str, pack_files: set, g
     comment_body = {
         "body": f"### Your contributed {pack} {PR_COMMENT_PREFIX}\n"
                 f"{pack_files_comment}\n"
-                f" [Please review the changes here](https://github.com/demisto/content/pull/{pr_number}/files)\n"
+                f" [Please review the changes here](https://github.com/cvescan/cvescan/pull/{pr_number}/files)\n"
                 f"{reviewers_comment}"
     }
 
@@ -258,7 +258,7 @@ def send_email_to_reviewers(reviewers_emails: list, api_token: str, pack_name: s
     email_subject = f'Cortex XSOAR: Changes made to {pack_name} content pack'
     email_content = f"Hi,<br><br>Your contributed <b>{pack_name}</b> pack has been modified on files:<br>" \
                     f"<ul>{modified_files_comment}</ul>Please review the changes " \
-                    f"<a href=\"https://github.com/demisto/content/pull/{pr_number}/files\">here</a>.<br><br>" \
+                    f"<a href=\"https://github.com/cvescan/cvescan/pull/{pr_number}/files\">here</a>.<br><br>" \
                     f" Cortex XSOAR Content Team."
 
     sg = sendgrid.SendGridAPIClient(api_token)

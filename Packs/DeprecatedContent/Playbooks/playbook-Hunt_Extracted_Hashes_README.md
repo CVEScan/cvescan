@@ -30,7 +30,7 @@ There are no outputs for this playbook.
 
 ## Playbook Image
 ---
-![Hunt_Extracted_Hashes](https://raw.githubusercontent.com/demisto/content/master/Packs/Hunting/doc_files/Hunt_Extracted_Hashes.png)
+![Hunt_Extracted_Hashes](https://raw.githubusercontent.com/cvescan/cvescan/master/Packs/Hunting/doc_files/Hunt_Extracted_Hashes.png)
 
 
 

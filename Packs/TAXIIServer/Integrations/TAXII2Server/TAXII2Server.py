@@ -908,7 +908,7 @@ def create_extension_definition(object_type, extensions_dict, xsoar_type,
             'modified': modified_parsed,
             'created_by_ref': f'identity--{str(PAWN_UUID)}',
             'schema':
-                'https://github.com/demisto/content/blob/4265bd5c71913cd9d9ed47d9c37d0d4d3141c3eb/'
+                'https://github.com/cvescan/cvescan/blob/4265bd5c71913cd9d9ed47d9c37d0d4d3141c3eb/'
                 'Packs/TAXIIServer/doc_files/XSOAR_indicator_schema.json',
             'version': '1.0',
             'extension_types': ['property-extension']

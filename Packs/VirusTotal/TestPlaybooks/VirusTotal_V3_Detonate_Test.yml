@@ -299,7 +299,7 @@ inputs:
   playbookInputQuery:
 - key: url_of_file_to_download
   value:
-    simple: https://raw.githubusercontent.com/demisto/content/master/__init__.py
+    simple: https://raw.githubusercontent.com/cvescan/cvescan/master/__init__.py
   required: false
   description: ""
   playbookInputQuery:

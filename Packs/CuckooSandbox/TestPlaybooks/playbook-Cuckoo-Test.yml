@@ -59,7 +59,7 @@ tasks:
       saveAsFile: {}
       unsecure: {}
       url:
-        simple: https://github.com/demisto/content/raw/master/TestData/pdf_noeof.pdf
+        simple: https://github.com/cvescan/cvescan/raw/master/TestData/pdf_noeof.pdf
       username: {}
     separatecontext: false
     view: |-
@@ -307,7 +307,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://github.com/demisto/content/raw/master/TestData/pdf-example-password.pdf
+        simple: https://github.com/cvescan/cvescan/raw/master/TestData/pdf-example-password.pdf
       username: {}
     separatecontext: false
     view: |-

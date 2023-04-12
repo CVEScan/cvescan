@@ -16,30 +16,30 @@ def test_get_content_modules(tmp_path, requests_mock, monkeypatch):
         - Verify content modules exist in the temp content dir
     """
     requests_mock.get(
-        'https://raw.githubusercontent.com/demisto/content/master/Packs/Base/Scripts'
+        'https://raw.githubusercontent.com/cvescan/cvescan/master/Packs/Base/Scripts'
         '/CommonServerPython/CommonServerPython.py',
     )
     requests_mock.get(
-        'https://raw.githubusercontent.com/demisto/content/master/Packs/Base/Scripts'
+        'https://raw.githubusercontent.com/cvescan/cvescan/master/Packs/Base/Scripts'
         '/CommonServerPowerShell/CommonServerPowerShell.ps1',
     )
     requests_mock.get(
-        'https://raw.githubusercontent.com/demisto/content/master/Tests/demistomock/demistomock.py',
+        'https://raw.githubusercontent.com/cvescan/cvescan/master/Tests/demistomock/demistomock.py',
     )
     requests_mock.get(
-        'https://raw.githubusercontent.com/demisto/content/master/Tests/demistomock/demistomock.ps1',
+        'https://raw.githubusercontent.com/cvescan/cvescan/master/Tests/demistomock/demistomock.ps1',
     )
     requests_mock.get(
-        'https://raw.githubusercontent.com/demisto/content/master/tox.ini',
+        'https://raw.githubusercontent.com/cvescan/cvescan/master/tox.ini',
     )
     requests_mock.get(
-        'https://raw.githubusercontent.com/demisto/content/master/Tests/scripts/dev_envs/pytest/conftest.py'
+        'https://raw.githubusercontent.com/cvescan/cvescan/master/Tests/scripts/dev_envs/pytest/conftest.py'
     )
     requests_mock.get(
-        'https://raw.githubusercontent.com/demisto/content/master/Tests/Marketplace/approved_usecases.json'
+        'https://raw.githubusercontent.com/cvescan/cvescan/master/Tests/Marketplace/approved_usecases.json'
     )
     requests_mock.get(
-        'https://raw.githubusercontent.com/demisto/content/master/Tests/Marketplace/approved_tags.json'
+        'https://raw.githubusercontent.com/cvescan/cvescan/master/Tests/Marketplace/approved_tags.json'
     )
     cached_modules = tmp_path / 'cached_modules'
     cached_modules.mkdir()

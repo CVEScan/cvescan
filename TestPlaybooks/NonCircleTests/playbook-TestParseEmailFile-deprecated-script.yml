@@ -87,7 +87,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/ParseEmailFiles_test_email.eml
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/ParseEmailFiles_test_email.eml
       username: {}
     separatecontext: false
     view: |-
@@ -402,7 +402,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://github.com/demisto/content/raw/master/TestData/EmailWithNonAsciiSubject.eml
+        simple: https://github.com/cvescan/cvescan/raw/master/TestData/EmailWithNonAsciiSubject.eml
       username: {}
     separatecontext: false
     view: |-
@@ -443,7 +443,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://github.com/demisto/content/raw/master/TestData/EmailWithNonAsciiAttachmentName.eml
+        simple: https://github.com/cvescan/cvescan/raw/master/TestData/EmailWithNonAsciiAttachmentName.eml
       username: {}
     separatecontext: false
     view: |-

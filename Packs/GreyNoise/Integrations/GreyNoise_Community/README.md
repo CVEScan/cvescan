@@ -4,7 +4,7 @@ more time to uncover and investigate true threats. The Action allows IP enrichme
 
 This Integration is design specifically for GreyNoise Community users and only provides the subset of intel available 
 via the GreyNoise Community API.  
-The [GreyNoise Integration](https://github.com/demisto/content/tree/master/Packs/GreyNoise/Integrations/GreyNoise) 
+The [GreyNoise Integration](https://github.com/cvescan/cvescan/tree/master/Packs/GreyNoise/Integrations/GreyNoise) 
 should be used by customers with a paid subscription to GreyNoise.
 
 This integration was integrated and tested with version 0.8.0 of GreyNoise Python SDK.

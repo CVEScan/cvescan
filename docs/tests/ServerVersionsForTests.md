@@ -25,4 +25,4 @@ fromversion additions to our TestPlaybooks. We plan to enable the run on this ve
 #### Related files
 | File | Repo |
 | ------------- | ------------- |
-| create_instances.py | https://github.com/demisto/content | 
+| create_instances.py | https://github.com/cvescan/cvescan | 

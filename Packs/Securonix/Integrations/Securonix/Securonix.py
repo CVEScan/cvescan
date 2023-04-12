@@ -2658,7 +2658,7 @@ def delete_lookup_table_entries(client: Client, args: Dict[str, Any]):
 def fetch_securonix_incident(client: Client, fetch_time: Optional[str], incident_status: str, default_severity: str,
                              max_fetch: str, last_run: Dict, close_incident: bool) -> list:
     """Uses to fetch incidents into Demisto
-    Documentation: https://github.com/demisto/content/tree/master/docs/fetching_incidents
+    Documentation: https://github.com/cvescan/cvescan/tree/master/docs/fetching_incidents
 
     Args:
         client: Client object with request

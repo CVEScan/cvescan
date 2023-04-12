@@ -133,7 +133,7 @@
         "id": "extension-definition--fc572b8c-bbe3-444b-b40b-06d3b890cd79",
         "modified": "2021-10-21T16:56:17.747194Z",
         "name": "Cortex XSOAR TIM Attack Pattern",
-        "schema": "https://github.com/demisto/content/tree/master/Packs/TAXIIServer/doc_files/XSOAR_indicator_schema.json",
+        "schema": "https://github.com/cvescan/cvescan/tree/master/Packs/TAXIIServer/doc_files/XSOAR_indicator_schema.json",
         "spec_version": "2.0",
         "type": "extension-definition",
         "version": "1.0"

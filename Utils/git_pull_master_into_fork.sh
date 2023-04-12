@@ -2,7 +2,7 @@
 
 #Be aware, only contributors should run this script.
 
-CONTENT_URL='https://github.com/demisto/content.git'
+CONTENT_URL='https://github.com/cvescan/cvescan.git'
 
 if [ -z "$1" ]
 then

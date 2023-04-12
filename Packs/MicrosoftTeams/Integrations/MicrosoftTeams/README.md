@@ -14,7 +14,7 @@ Data is passed between Microsoft Teams and Cortex XSOAR through the bot that you
 
 The web server for the integration runs within a long-running Docker container. Cortex XSOAR maps the Docker port to which the server listens, to the host port (to which Teams posts messages). For more information, see [our documentation](https://xsoar.pan.dev/docs/integrations/long-running#invoking-http-integrations-via-cortex-xsoar-servers-route-handling) and [Docker documentation](https://docs.docker.com/config/containers/container-networking/).
 ### Protocol Diagram
-![image](https://raw.githubusercontent.com/demisto/content/b222375925eb13feaaa28cd8b1c814b4d212f2e4/Integrations/MicrosoftTeams/doc_files/MicrosoftTeamsProtocalDiagram.png)
+![image](https://raw.githubusercontent.com/cvescan/cvescan/b222375925eb13feaaa28cd8b1c814b4d212f2e4/Integrations/MicrosoftTeams/doc_files/MicrosoftTeamsProtocalDiagram.png)
 
 ## Important Information
  - The messaging endpoint must be one of the following:
@@ -81,9 +81,9 @@ Follow [Configuring Upstream Servers NGINX guide](https://docs.nginx.com/nginx/a
 
 The port (`7000` in this example), to which the reverse proxy should forward the traffic on HTTP, should be the same port you specify in the integration instance configuration, as the web server the integration spins up, listens on that port.
 
-![image](https://github.com/demisto/content/raw/fa322765a440f8376bbf7ac85f0400beb720f712/Packs/MicrosoftTeams/Integrations/MicrosoftTeams/doc_files/RP-NGINX.png)
+![image](https://github.com/cvescan/cvescan/raw/fa322765a440f8376bbf7ac85f0400beb720f712/Packs/MicrosoftTeams/Integrations/MicrosoftTeams/doc_files/RP-NGINX.png)
 
-![image](https://github.com/demisto/content/raw/fa322765a440f8376bbf7ac85f0400beb720f712/Packs/MicrosoftTeams/Integrations/MicrosoftTeams/doc_files/InstanceConfig7000.png)
+![image](https://github.com/cvescan/cvescan/raw/fa322765a440f8376bbf7ac85f0400beb720f712/Packs/MicrosoftTeams/Integrations/MicrosoftTeams/doc_files/InstanceConfig7000.png)
 
 ### 3. Using Apache reverse proxy and Cortex XSOAR engine
 In this configuration, the inbound connection, from Microsoft Teams to Cortex XSOAR, goes through a reverse proxy (e.g., [Apache](https://httpd.apache.org/docs/2.4/howto/reverse_proxy.html)) and possibly a load balancer, which relays the HTTPS requests posted from Microsoft Teams
@@ -91,9 +91,9 @@ to a Cortex XSOAR engine, which can be put in a DMZ, on HTTP.
 
 The port (`7000` in this example), to which the reverse proxy should forward the traffic on HTTP, should be the same port you specify in the integration instance configuration, as the web server the integration spins up, listens on that port.
 
-![image](https://github.com/demisto/content/raw/fa322765a440f8376bbf7ac85f0400beb720f712/Packs/MicrosoftTeams/Integrations/MicrosoftTeams/doc_files/RP-Engine.png)
+![image](https://github.com/cvescan/cvescan/raw/fa322765a440f8376bbf7ac85f0400beb720f712/Packs/MicrosoftTeams/Integrations/MicrosoftTeams/doc_files/RP-Engine.png)
 
-![image](https://github.com/demisto/content/raw/fa322765a440f8376bbf7ac85f0400beb720f712/Packs/MicrosoftTeams/Integrations/MicrosoftTeams/doc_files/InstanceConfig7000.png)
+![image](https://github.com/cvescan/cvescan/raw/fa322765a440f8376bbf7ac85f0400beb720f712/Packs/MicrosoftTeams/Integrations/MicrosoftTeams/doc_files/InstanceConfig7000.png)
 
 
 ### 4. Using Cloudflare
@@ -111,17 +111,17 @@ All HTTPS traffic that will hit the selected messaging endpoint will be directed
 
 ## Setup Video
 <video controls>
-    <source src="https://github.com/demisto/content-assets/blob/master/Assets/MicrosoftTeams/FullConfigVideo.mp4?raw=true"
+    <source src="https://github.com/cvescan/cvescan-assets/blob/master/Assets/MicrosoftTeams/FullConfigVideo.mp4?raw=true"
             type="video/mp4"/>
-    Sorry, your browser doesn't support embedded videos. You can download the video at: https://github.com/demisto/content-assets/blob/master/Assets/MicrosoftTeams/FullConfigVideo.mov?raw=true
+    Sorry, your browser doesn't support embedded videos. You can download the video at: https://github.com/cvescan/cvescan-assets/blob/master/Assets/MicrosoftTeams/FullConfigVideo.mov?raw=true
 </video>
 
 
 ## Old Setup Video (Use the above video)
 <video controls>
-    <source src="https://github.com/demisto/content-assets/raw/845c0d790ceb4fbac08c5c7852b2a3bed0829778/Assets/MicrosoftTeams/config.mp4"
+    <source src="https://github.com/cvescan/cvescan-assets/raw/845c0d790ceb4fbac08c5c7852b2a3bed0829778/Assets/MicrosoftTeams/config.mp4"
             type="video/mp4"/>
-    Sorry, your browser doesn't support embedded videos. You can download the video at: https://github.com/demisto/content-assets/raw/845c0d790ceb4fbac08c5c7852b2a3bed0829778/Assets/MicrosoftTeams/config.mp4
+    Sorry, your browser doesn't support embedded videos. You can download the video at: https://github.com/cvescan/cvescan-assets/raw/845c0d790ceb4fbac08c5c7852b2a3bed0829778/Assets/MicrosoftTeams/config.mp4
 </video>
 
 ## Prerequisites
@@ -191,7 +191,7 @@ Note: in step 5, if you choose **Use existing app registration**, make sure to d
   - In the **Scope** section, select the following checkboxes: `Personal`, `Team`, and `Group Chat`.
 
 11. Record the **Bot ID**, which you will need when configuring the integration in Cortex XSOAR.
-![image](https://raw.githubusercontent.com/demisto/content/b222375925eb13feaaa28cd8b1c814b4d212f2e4/Integrations/MicrosoftTeams/doc_files/MSTeams-BotID.png)
+![image](https://raw.githubusercontent.com/cvescan/cvescan/b222375925eb13feaaa28cd8b1c814b4d212f2e4/Integrations/MicrosoftTeams/doc_files/MSTeams-BotID.png)
 12. Click **Generate new password**. Record the password, which you will need when configuring the integration in Cortex XSOAR.
 13. In the **Messaging endpoints** section, enter the URL to which messages will be sent (to the Demisto Bot).
   - To enable calling capabilities on the Bot enter the same URL to the **Calling endpoints** section.
@@ -1106,14 +1106,14 @@ In order to avoid mentioning the bot, if this was previously configured without 
 
 For example, in order to check the reputation of the IP address 8.8.8.8, run the following: `@Demisto Bot !ip ip=8.8.8.8`
 
-![image](https://raw.githubusercontent.com/demisto/content/c7d516e68459f04102fd31ebfadd6574d775f436/Packs/MicrosoftTeams/Integrations/MicrosoftTeams/doc_files/cmd.png)
+![image](https://raw.githubusercontent.com/cvescan/cvescan/c7d516e68459f04102fd31ebfadd6574d775f436/Packs/MicrosoftTeams/Integrations/MicrosoftTeams/doc_files/cmd.png)
 
 ## Direct messages commands
 You can chat with the bot in direct messages in order to retrieve data (list incidents and tasks) and run operations (create incident and mirror an investigation) related to Cortex XSOAR.
 
 You can send the message `help` in order to see the supported commands:
 
-![image](https://raw.githubusercontent.com/demisto/content/c7d516e68459f04102fd31ebfadd6574d775f436/Packs/MicrosoftTeams/Integrations/MicrosoftTeams/doc_files/dm.png)
+![image](https://raw.githubusercontent.com/cvescan/cvescan/c7d516e68459f04102fd31ebfadd6574d775f436/Packs/MicrosoftTeams/Integrations/MicrosoftTeams/doc_files/dm.png)
 
 ## Troubleshooting
 
@@ -1160,4 +1160,4 @@ You can send the message `help` in order to see the supported commands:
 
 ## Download Demisto Bot
 
-[Demisto Bot zip](https://github.com/demisto/content/raw/2d9804da7ff94bc1243fe083f280e44602bd1738/Packs/MicrosoftTeams/Integrations/MicrosoftTeams/doc_files/DemistoBot.zip)
+[Demisto Bot zip](https://github.com/cvescan/cvescan/raw/2d9804da7ff94bc1243fe083f280e44602bd1738/Packs/MicrosoftTeams/Integrations/MicrosoftTeams/doc_files/DemistoBot.zip)

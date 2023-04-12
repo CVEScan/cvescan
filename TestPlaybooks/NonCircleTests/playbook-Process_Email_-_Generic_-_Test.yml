@@ -58,7 +58,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/ParseEmailFiles_test_email.eml
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/ParseEmailFiles_test_email.eml
       username: {}
     reputationcalc: 1
     separatecontext: false
@@ -221,7 +221,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/smtp_email_utf_8.test
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/smtp_email_utf_8.test
       username: {}
     reputationcalc: 1
     separatecontext: false
@@ -303,7 +303,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/docwithindicators.doc
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/docwithindicators.doc
       username: {}
     reputationcalc: 1
     separatecontext: false
@@ -687,7 +687,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/e5541580421db52f78e3ff6071594a2deea50b8e/Scripts/ParseEmailFiles/test_data/smime.p7m
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/e5541580421db52f78e3ff6071594a2deea50b8e/Scripts/ParseEmailFiles/test_data/smime.p7m
       username: {}
     reputationcalc: 1
     separatecontext: false
@@ -848,7 +848,7 @@ tasks:
         simple: "yes"
       unsecure: {}
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/docwithindicators.doc
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/docwithindicators.doc
       username: {}
     reputationcalc: 1
     separatecontext: false

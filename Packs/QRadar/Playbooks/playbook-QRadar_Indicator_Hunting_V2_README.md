@@ -50,4 +50,4 @@ This playbook does not use any integrations.
 
 ## Playbook Image
 ---
-![QRadar_Indicator_Hunting_V2](https://raw.githubusercontent.com/demisto/content/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/QRadar_Indicator_Hunting_V2.png)
+![QRadar_Indicator_Hunting_V2](https://raw.githubusercontent.com/cvescan/cvescan/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/QRadar_Indicator_Hunting_V2.png)

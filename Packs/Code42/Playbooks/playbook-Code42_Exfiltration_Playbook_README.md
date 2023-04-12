@@ -46,4 +46,4 @@ There are no outputs for this playbook.
 ## Playbook Image
 
 ---
-![Code42 Exfiltration Playbook](https://raw.githubusercontent.com/demisto/content/dd418027433970a18ce06ebef97933c70a92a940/Packs/Code42/doc_files/Code42_Exfiltration_Playbook.png)
+![Code42 Exfiltration Playbook](https://raw.githubusercontent.com/cvescan/cvescan/dd418027433970a18ce06ebef97933c70a92a940/Packs/Code42/doc_files/Code42_Exfiltration_Playbook.png)

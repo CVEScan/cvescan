@@ -1,4 +1,4 @@
-This playbook returns "RemediationAction" options based on meeting "Automated Remediation Requirements" (https://github.com/demisto/content/tree/master/Packs/CortexAttackSurfaceManagement#automated-remediation-requirements) as well as whether ServiceNowV2 integration is set up.  Possible return values are:
+This playbook returns "RemediationAction" options based on meeting "Automated Remediation Requirements" (https://github.com/cvescan/cvescan/tree/master/Packs/CortexAttackSurfaceManagement#automated-remediation-requirements) as well as whether ServiceNowV2 integration is set up.  Possible return values are:
 - Prompt base - data collection task with only email/manual options.
 - Prompt all options - data collection task with all options (meets Automated Remediation requirements and ServiceNow is enabled).
 - Prompt no snow - all options except ServiceNow (Automated Remediation requirements are met).
@@ -25,7 +25,7 @@ This playbook does not use any commands.
 | **Name** | **Description** | **Default Value** | **Required** |
 | --- | --- | --- | --- |
 | ServiceNowv2Enabled | ServiceNow v2 integration enabled. |  | Required |
-| AutoRemediationRequirements | Meets automated remediation requirements \(https://github.com/demisto/content/tree/master/Packs/CortexAttackSurfaceManagement\#automated-remediation-requirements\). |  | Required |
+| AutoRemediationRequirements | Meets automated remediation requirements \(https://github.com/cvescan/cvescan/tree/master/Packs/CortexAttackSurfaceManagement\#automated-remediation-requirements\). |  | Required |
 
 ## Playbook Outputs
 ---

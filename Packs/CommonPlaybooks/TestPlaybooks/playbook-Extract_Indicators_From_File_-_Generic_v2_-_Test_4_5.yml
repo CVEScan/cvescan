@@ -65,7 +65,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/portuguesetextwithindicators.txt
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/portuguesetextwithindicators.txt
     reputationcalc: 1
     separatecontext: false
     view: |-
@@ -297,7 +297,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/docwithindicators.doc
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/docwithindicators.doc
     reputationcalc: 1
     separatecontext: false
     view: |-
@@ -336,7 +336,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/docxwithindicators.docx
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/docxwithindicators.docx
     reputationcalc: 1
     separatecontext: false
     view: |-
@@ -375,7 +375,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/pdfwithindicators.pdf
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/pdfwithindicators.pdf
     reputationcalc: 1
     separatecontext: false
     view: |-
@@ -539,7 +539,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/Inline_malicious_url.eml
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/Inline_malicious_url.eml
     reputationcalc: 1
     separatecontext: false
     view: |-
@@ -578,7 +578,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/TestExcelFile.xlsx
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/TestExcelFile.xlsx
     reputationcalc: 1
     separatecontext: false
     view: |-
@@ -617,7 +617,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/ACH.Payment.Advice.rtf
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/ACH.Payment.Advice.rtf
     separatecontext: false
     view: |-
       {
@@ -697,7 +697,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/test_pptx.pptx
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/test_pptx.pptx
     reputationcalc: 1
     separatecontext: false
     view: |-
@@ -736,7 +736,7 @@ tasks:
       saveAsFile:
         simple: "yes"
       url:
-        simple: https://raw.githubusercontent.com/demisto/content/master/TestData/test_xml.xml
+        simple: https://raw.githubusercontent.com/cvescan/cvescan/master/TestData/test_xml.xml
     reputationcalc: 1
     separatecontext: false
     view: |-

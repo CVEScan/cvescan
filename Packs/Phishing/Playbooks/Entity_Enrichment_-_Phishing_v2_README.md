@@ -81,4 +81,4 @@ This playbook does not use any commands.
 
 ## Playbook Image
 ---
-![Entity_Enrichment_Phishing_v2](https://raw.githubusercontent.com/demisto/content/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/Entity_Enrichment_Phishing_v2.png)
+![Entity_Enrichment_Phishing_v2](https://raw.githubusercontent.com/cvescan/cvescan/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/Entity_Enrichment_Phishing_v2.png)

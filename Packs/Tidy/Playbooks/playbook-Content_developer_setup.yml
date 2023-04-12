@@ -442,11 +442,11 @@ tasks:
       - "26"
     scriptarguments:
       dest:
-        simple: ~/dev/demisto/content
+        simple: ~/dev/cvescan/cvescan
       force:
         simple: "yes"
       repo:
-        simple: git@github.com:demisto/content.git
+        simple: git@github.com:cvescan/cvescan.git
       update:
         simple: "yes"
     separatecontext: false
@@ -547,11 +547,11 @@ tasks:
       brand: ""
     scriptarguments:
       dest:
-        simple: ~/dev/demisto/content-test-conf
+        simple: ~/dev/cvescan/cvescan-test-conf
       force:
         simple: "yes"
       repo:
-        simple: git@github.com:demisto/content-test-conf.git
+        simple: git@github.com:cvescan/cvescan-test-conf.git
       update:
         simple: "yes"
     separatecontext: false

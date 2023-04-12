@@ -9,7 +9,7 @@ permissions:
 jobs:
   handle_contributor_stale_branches:
     runs-on: ubuntu-latest
-    if: github.repository == 'demisto/content'
+    if: github.repository == 'cvescan/cvescan'
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -33,7 +33,7 @@ jobs:
 
   handle_stale_non_contributor_branches:
     runs-on: ubuntu-latest
-    if: github.repository == 'demisto/content'
+    if: github.repository == 'cvescan/cvescan'
     steps:
       - name: Checkout
         uses: actions/checkout@v3

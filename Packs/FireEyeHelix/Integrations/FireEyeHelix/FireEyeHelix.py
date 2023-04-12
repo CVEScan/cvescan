@@ -978,7 +978,7 @@ def test_module(client: Client, test_fetch: bool = False, fetch_time: Optional[s
 
 def fetch_incidents(client: Client, fetch_time: Optional[str], last_run: Dict) -> Tuple[List, Dict]:
     """Uses to fetch incidents into Demisto
-    Documentation: https://github.com/demisto/content/tree/master/docs/fetching_incidents
+    Documentation: https://github.com/cvescan/cvescan/tree/master/docs/fetching_incidents
 
     Args:
         client: Client object with request

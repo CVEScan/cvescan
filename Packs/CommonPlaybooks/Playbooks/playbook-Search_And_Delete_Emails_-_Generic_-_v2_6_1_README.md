@@ -45,4 +45,4 @@ There are no outputs for this playbook.
 
 ## Playbook Image
 ---
-![Search And Delete Emails - Generic v2](https://raw.githubusercontent.com/demisto/content/fb91a23511e86886996c52f5fdd065175023ede2/Packs/CommonPlaybooks/doc_files/Search_And_Delete_Emails_-_Generic_-_v2_6_0.png)
+![Search And Delete Emails - Generic v2](https://raw.githubusercontent.com/cvescan/cvescan/fb91a23511e86886996c52f5fdd065175023ede2/Packs/CommonPlaybooks/doc_files/Search_And_Delete_Emails_-_Generic_-_v2_6_0.png)

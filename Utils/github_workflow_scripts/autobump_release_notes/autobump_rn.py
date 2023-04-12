@@ -26,7 +26,7 @@ ORGANIZATION_NAME = "demisto"
 REPO_MANE = "content"
 BASE = "master"
 PR_COMMENT_TITLE = "### This PR was automatically updated by a " \
-                   "[GitHub Action](https://github.com/demisto/content/actions/runs/{})\n"
+                   "[GitHub Action](https://github.com/cvescan/cvescan/actions/runs/{})\n"
 PR_COMMENT = "- **{}** pack version was bumped to **{}**.\n"
 COMMIT_MESSAGE = "Bump pack from version {} to {}."
 MERGE_FROM_MASTER_COMMIT_MESSAGE = f"Merged {BASE} into current branch."

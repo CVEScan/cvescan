@@ -25,4 +25,4 @@ There are no outputs for this playbook.
 
 ## Playbook Image
 ---
-![Archer_initiate_incident](https://raw.githubusercontent.com/demisto/content/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/Archer_initiate_incident.png)
+![Archer_initiate_incident](https://raw.githubusercontent.com/cvescan/cvescan/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/Archer_initiate_incident.png)

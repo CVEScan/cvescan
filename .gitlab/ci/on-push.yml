@@ -25,7 +25,7 @@ trigger-private-build:
   script:
     - echo "====Trigger Private Build===="
     - |
-      if [ 'true' = $(./Tests/scripts/check_if_branch_exist.sh -t $GITHUB_TOKEN --repo demisto/content-private -b $CI_COMMIT_BRANCH) ]; then
+      if [ 'true' = $(./Tests/scripts/check_if_branch_exist.sh -t $GITHUB_TOKEN --repo cvescan/cvescan-private -b $CI_COMMIT_BRANCH) ]; then
         PRIVATE_BRANCH_NAME=$CI_COMMIT_BRANCH
       else
         PRIVATE_BRANCH_NAME='master'

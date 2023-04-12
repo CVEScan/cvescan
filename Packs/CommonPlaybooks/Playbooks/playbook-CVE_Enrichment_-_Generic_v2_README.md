@@ -53,4 +53,4 @@ This playbook does not use any scripts.
 
 ## Playbook Image
 ---
-![CVE_Enrichment_Generic_v2](https://raw.githubusercontent.com/demisto/content/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/CVE_Enrichment_Generic_v2.png)
+![CVE_Enrichment_Generic_v2](https://raw.githubusercontent.com/cvescan/cvescan/1bdd5229392bd86f0cc58265a24df23ee3f7e662/docs/images/playbooks/CVE_Enrichment_Generic_v2.png)

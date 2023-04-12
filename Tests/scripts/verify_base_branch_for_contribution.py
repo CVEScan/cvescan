@@ -17,7 +17,7 @@ def get_base_branch(pr_num):
     # Disable insecure warnings
     requests.packages.urllib3.disable_warnings()  # pylint: disable=no-member
 
-    url = 'https://api.github.com/repos/demisto/content/pulls/{}'.format(pr_num)
+    url = 'https://api.github.com/repos/cvescan/cvescan/pulls/{}'.format(pr_num)
 
     try:
         res = requests.get(url, verify=False)

@@ -53,4 +53,4 @@ There are no outputs for this playbook.
 
 ## Playbook Image
 ---
-![NGFW Internal Scan](https://raw.githubusercontent.com/demisto/content/b9b3e36e6893e95be5de09876efce94acec09da8/Packs/Core/doc_files/NGFW_Internal_Scan.png)
+![NGFW Internal Scan](https://raw.githubusercontent.com/cvescan/cvescan/b9b3e36e6893e95be5de09876efce94acec09da8/Packs/Core/doc_files/NGFW_Internal_Scan.png)
